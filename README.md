@@ -10,7 +10,7 @@ and a cheat sheet. One HTML file, no build step, no dependencies, no tracking.
 
 ## Try it
 
-**Live: https://mraruziev.github.io/az-permit-prep/**
+**Live: https://az-test.bestarorg.com**
 
 Or clone the repo and open `index.html` in any browser. That is the whole install — it works
 offline, since nothing is fetched at runtime.
