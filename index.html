@@ -1,0 +1,1989 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Free interactive Arizona MVD permit test prep: 8 narrated animated lessons, 166 practice questions, 30-question mock exams, road sign drills and a cheat sheet.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23125A42'/%3E%3Ccircle cx='50' cy='27' r='11' fill='%23E8604F'/%3E%3Ccircle cx='50' cy='52' r='11' fill='%23F6C244'/%3E%3Ccircle cx='50' cy='77' r='11' fill='%234FBE8A'/%3E%3C/svg%3E">
+<title>Arizona Permit Prep</title>
+<style>
+:root{
+  --font-display:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+
+  --ground:#E7ECE6;
+  --surface:#FFFFFF;
+  --surface-2:#F2F6F0;
+  --ink:#0F1A14;
+  --ink-2:#465349;
+  --ink-3:#78877D;
+  --line:#D4DCD1;
+  --line-2:#BFCABB;
+
+  --guide:#125A42;
+  --on-guide:#FFFFFF;
+  --accent:#0E6A4B;
+  --accent-soft:#DDEDE4;
+
+  --signal:#9A6A04;
+  --signal-soft:#FAF0D6;
+  --stop:#A82B1F;
+  --stop-soft:#FAE6E3;
+  --go:#146F49;
+  --go-soft:#DFF0E7;
+
+  --asphalt:#39413B;
+  --plate-yellow:#F6C244;
+
+  --shadow:0 1px 2px rgba(15,26,20,.05),0 10px 28px -16px rgba(15,26,20,.35);
+  --radius:14px;
+}
+.theme-dark{
+  --ground:#0A100D;
+  --surface:#131B17;
+  --surface-2:#1A241E;
+  --ink:#E6EDE7;
+  --ink-2:#A0B1A6;
+  --ink-3:#6E7F75;
+  --line:#243029;
+  --line-2:#32423A;
+  --guide:#0F5B41;
+  --on-guide:#FFFFFF;
+  --accent:#54C393;
+  --accent-soft:#12291F;
+  --signal:#E8B65C;
+  --signal-soft:#2A2214;
+  --stop:#E86E60;
+  --stop-soft:#2E1815;
+  --go:#4FBE8A;
+  --go-soft:#12291F;
+  --asphalt:#2B322D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 30px -18px rgba(0,0,0,.9);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --ground:#0A100D;
+    --surface:#131B17;
+    --surface-2:#1A241E;
+    --ink:#E6EDE7;
+    --ink-2:#A0B1A6;
+    --ink-3:#6E7F75;
+    --line:#243029;
+    --line-2:#32423A;
+    --guide:#0F5B41;
+    --on-guide:#FFFFFF;
+    --accent:#54C393;
+    --accent-soft:#12291F;
+    --signal:#E8B65C;
+    --signal-soft:#2A2214;
+    --stop:#E86E60;
+    --stop-soft:#2E1815;
+    --go:#4FBE8A;
+    --go-soft:#12291F;
+    --asphalt:#2B322D;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 30px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A100D;
+  --surface:#131B17;
+  --surface-2:#1A241E;
+  --ink:#E6EDE7;
+  --ink-2:#A0B1A6;
+  --ink-3:#6E7F75;
+  --line:#243029;
+  --line-2:#32423A;
+  --guide:#0F5B41;
+  --on-guide:#FFFFFF;
+  --accent:#54C393;
+  --accent-soft:#12291F;
+  --signal:#E8B65C;
+  --signal-soft:#2A2214;
+  --stop:#E86E60;
+  --stop-soft:#2E1815;
+  --go:#4FBE8A;
+  --go-soft:#12291F;
+  --asphalt:#2B322D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 30px -18px rgba(0,0,0,.9);
+}
+:root[data-theme="light"]{
+  --ground:#E7ECE6;
+  --surface:#FFFFFF;
+  --surface-2:#F2F6F0;
+  --ink:#0F1A14;
+  --ink-2:#465349;
+  --ink-3:#78877D;
+  --line:#D4DCD1;
+  --line-2:#BFCABB;
+  --guide:#125A42;
+  --on-guide:#FFFFFF;
+  --accent:#0E6A4B;
+  --accent-soft:#DDEDE4;
+  --signal:#9A6A04;
+  --signal-soft:#FAF0D6;
+  --stop:#A82B1F;
+  --stop-soft:#FAE6E3;
+  --go:#146F49;
+  --go-soft:#DFF0E7;
+  --asphalt:#39413B;
+  --shadow:0 1px 2px rgba(15,26,20,.05),0 10px 28px -16px rgba(15,26,20,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font-body);
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;
+  text-wrap:balance;margin:0}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---- masthead ---- */
+.masthead{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.masthead-in{display:flex;align-items:center;gap:14px;padding:12px 20px;max-width:1000px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;background:none;border:0;padding:0}
+.marker{width:34px;height:44px;border-radius:3px;background:var(--guide);color:#fff;
+  border:2px solid rgba(255,255,255,.85);box-shadow:0 0 0 1px var(--guide);
+  display:grid;place-items:center;font-family:var(--font-display);font-weight:800;
+  font-size:14px;letter-spacing:.04em;flex:none}
+.brand-txt{text-align:left;line-height:1.15}
+.brand-txt b{display:block;font-family:var(--font-display);font-weight:800;font-size:16px;letter-spacing:-.01em}
+.brand-txt span{display:block;font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.1em}
+.nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav button{background:none;border:1px solid transparent;padding:7px 12px;border-radius:99px;
+  font-size:13.5px;font-weight:600;color:var(--ink-2)}
+.nav button:hover{background:var(--surface-2);color:var(--ink)}
+.nav button[aria-current="page"]{background:var(--accent-soft);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
+
+/* ---- generic ---- */
+.eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.stack{display:flex;flex-direction:column}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+main{padding:28px 0 72px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;
+  border:1px solid var(--line-2);background:var(--surface);padding:11px 18px;
+  font-weight:650;font-size:15px;transition:transform .12s,background .15s,border-color .15s}
+.btn:hover{border-color:var(--ink-3)}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--guide);color:var(--on-guide);border-color:var(--guide)}
+.btn-primary:hover{background:color-mix(in srgb,var(--guide) 86%,#000);border-color:transparent}
+.btn-lg{padding:15px 26px;font-size:16.5px}
+.btn-sm{padding:8px 13px;font-size:13.5px;border-radius:8px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:99px;
+  font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line)}
+.chip-go{background:var(--go-soft);color:var(--go);border-color:color-mix(in srgb,var(--go) 25%,transparent)}
+.chip-stop{background:var(--stop-soft);color:var(--stop);border-color:color-mix(in srgb,var(--stop) 25%,transparent)}
+.chip-warn{background:var(--signal-soft);color:var(--signal);border-color:color-mix(in srgb,var(--signal) 30%,transparent)}
+
+/* ---- road progress ---- */
+.road{position:relative;height:14px;border-radius:7px;background:var(--asphalt);overflow:hidden}
+.road-fill{position:absolute;left:0;top:0;bottom:0;width:var(--pct,0%);
+  background:linear-gradient(90deg,var(--guide),color-mix(in srgb,var(--guide) 55%,var(--accent)));
+  transition:width .4s cubic-bezier(.4,0,.2,1)}
+.road-dash{position:absolute;left:0;right:0;top:50%;height:2px;transform:translateY(-1px);
+  background:repeating-linear-gradient(90deg,var(--plate-yellow) 0 11px,transparent 11px 25px);opacity:.85}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important}
+}
+/* ---- hero ---- */
+.hero{display:grid;gap:18px;padding:8px 0 34px}
+.hero h1{font-size:clamp(34px,6.2vw,54px);line-height:1.02;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{font-size:17.5px;color:var(--ink-2);max-width:60ch}
+.hero-cta{display:flex;gap:11px;flex-wrap:wrap;margin-top:4px}
+.hero-note{font-size:13.5px;color:var(--ink-3);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+
+/* ---- stat strip ---- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:30px}
+.stat{background:var(--surface);padding:15px 16px;display:flex;flex-direction:column;gap:3px}
+.stat-v{font-family:var(--font-display);font-weight:800;font-size:25px;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;line-height:1.1}
+.stat-l{font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-weight:600}
+@media (max-width:620px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ---- mode cards ---- */
+.section-head{display:flex;align-items:baseline;gap:12px;margin:34px 0 14px}
+.section-head h2{font-size:20px}
+.section-head .rule{flex:1;height:1px;background:var(--line)}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:14px}
+.mode{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;display:flex;flex-direction:column;gap:7px;box-shadow:var(--shadow);
+  transition:transform .15s,border-color .15s}
+.mode:hover{transform:translateY(-2px);border-color:var(--accent)}
+.mode-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.mode h3{font-size:16.5px}
+.mode p{font-size:13.5px;color:var(--ink-2);line-height:1.45}
+.mode-meta{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-3);letter-spacing:.04em}
+.mode:disabled{opacity:.5}
+.mode:disabled:hover{transform:none;border-color:var(--line)}
+
+/* ---- topic list ---- */
+.topics{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden}
+.topic{display:grid;grid-template-columns:1fr 96px 62px;align-items:center;gap:14px;
+  background:var(--surface);border:0;padding:13px 16px;text-align:left;transition:background .15s}
+.topic:hover{background:var(--surface-2)}
+.topic-n{font-weight:650;font-size:14.5px}
+.topic-n small{display:block;font-weight:400;font-size:12px;color:var(--ink-3)}
+.meter{height:7px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);width:var(--pct,0%)}
+.topic-p{font-family:var(--font-mono);font-size:13px;color:var(--ink-2);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.topic{grid-template-columns:1fr 56px}.topic .meter{display:none}}
+
+/* ---- quiz runner ---- */
+.runner{display:flex;flex-direction:column;gap:16px}
+.runner-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mile{display:flex;align-items:center;gap:0;font-family:var(--font-mono);font-weight:700;
+  font-size:13px;background:var(--guide);color:var(--on-guide);padding:5px 11px;border-radius:4px;
+  letter-spacing:.05em;font-variant-numeric:tabular-nums;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+.runner-title{font-family:var(--font-display);font-weight:800;font-size:15px;letter-spacing:-.01em}
+.runner-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.tally{font-family:var(--font-mono);font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tally b{color:var(--go)}
+.tally i{font-style:normal;color:var(--stop)}
+
+.qcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:18px}
+.qtext{font-family:var(--font-display);font-weight:700;font-size:clamp(19px,2.6vw,23px);
+  line-height:1.32;letter-spacing:-.018em;text-wrap:balance}
+.qsign{display:grid;place-items:center;padding:16px;background:var(--surface-2);
+  border:1px solid var(--line);border-radius:10px}
+.qsign svg{width:150px;height:150px}
+
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{display:flex;align-items:flex-start;gap:13px;text-align:left;width:100%;
+  background:var(--surface);border:1.5px solid var(--line-2);border-radius:11px;
+  padding:14px 15px;font-size:15.5px;line-height:1.4;transition:border-color .13s,background .13s}
+.opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.opt:disabled{cursor:default}
+.opt .key{flex:none;width:26px;height:26px;border-radius:6px;background:var(--surface-2);
+  border:1px solid var(--line);display:grid;place-items:center;font-family:var(--font-mono);
+  font-size:12.5px;font-weight:700;color:var(--ink-2);margin-top:1px}
+.opt.is-picked{border-color:var(--accent);background:var(--accent-soft)}
+.opt.is-picked .key{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.opt.is-right{border-color:var(--go);background:var(--go-soft)}
+.opt.is-right .key{background:var(--go);color:#fff;border-color:var(--go)}
+.opt.is-wrong{border-color:var(--stop);background:var(--stop-soft)}
+.opt.is-wrong .key{background:var(--stop);color:#fff;border-color:var(--stop)}
+.opt.is-dim{opacity:.55}
+
+.feedback{border-radius:11px;padding:15px 17px;display:flex;flex-direction:column;gap:6px;
+  border-left:4px solid var(--go);background:var(--go-soft)}
+.feedback.bad{border-left-color:var(--stop);background:var(--stop-soft)}
+.feedback b{font-family:var(--font-display);font-weight:800;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--go)}
+.feedback.bad b{color:var(--stop)}
+.feedback p{font-size:14.5px;color:var(--ink-2);line-height:1.5}
+.runner-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hint{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-3);letter-spacing:.03em}
+@media (max-width:560px){.hint{display:none}.qcard{padding:18px}}
+
+/* ---- results ---- */
+.panel{background:var(--guide);color:var(--on-guide);border-radius:var(--radius);
+  padding:30px 28px;box-shadow:inset 0 0 0 2px rgba(255,255,255,.28),var(--shadow);
+  display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center}
+.panel-verdict{font-family:var(--font-display);font-weight:800;
+  font-size:clamp(38px,8vw,62px);letter-spacing:-.03em;line-height:1;text-transform:uppercase}
+.panel-score{font-family:var(--font-mono);font-size:19px;letter-spacing:.05em;
+  font-variant-numeric:tabular-nums;opacity:.95}
+.panel-note{font-size:14.5px;opacity:.85;max-width:44ch}
+.panel.fail{background:var(--asphalt)}
+.rev{display:flex;flex-direction:column;gap:11px}
+.rev-item{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--stop);
+  border-radius:10px;padding:15px 17px;display:flex;flex-direction:column;gap:7px}
+.rev-q{font-weight:650;font-size:15px;line-height:1.4}
+.rev-line{font-size:14px;color:var(--ink-2)}
+.rev-line b{color:var(--go);font-weight:650}
+.rev-line s{color:var(--stop);text-decoration-thickness:1px}
+.rev-why{font-size:13.5px;color:var(--ink-3);line-height:1.5;padding-top:2px;border-top:1px dashed var(--line)}
+.rev-sign{width:76px;height:76px;flex:none}
+.rev-sign svg{width:100%;height:100%;display:block}
+
+/* ---- sign chart ---- */
+.signgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:13px}
+.signcard{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:15px;
+  display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center;box-shadow:var(--shadow)}
+.signcard svg{width:88px;height:88px}
+.signcard h4{font-size:13.5px;letter-spacing:-.005em}
+.signcard p{font-size:12.5px;color:var(--ink-2);line-height:1.4}
+.sgn text{font-family:var(--font-display);font-weight:800;text-anchor:middle;dominant-baseline:central}
+
+/* ---- cheat sheet ---- */
+.sheet{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.sheet-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 20px;box-shadow:var(--shadow)}
+.sheet-card h3{font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);
+  margin-bottom:12px;padding-bottom:9px;border-bottom:2px solid var(--accent-soft)}
+.sheet-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;align-items:baseline}
+.sheet-card dt{font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--ink);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.sheet-card dd{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.45}
+
+/* ---- history ---- */
+.hist{width:100%;border-collapse:collapse;font-size:14px}
+.hist th{text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--ink-3);font-weight:650;padding:0 14px 9px;border-bottom:1px solid var(--line)}
+.hist td{padding:11px 14px;border-bottom:1px solid var(--line)}
+.hist tr:last-child td{border-bottom:0}
+.hist td.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+
+.empty{padding:30px;text-align:center;color:var(--ink-3);font-size:14.5px}
+.disclaimer{margin-top:44px;padding:16px 18px;border:1px dashed var(--line-2);border-radius:11px;
+  font-size:13px;color:var(--ink-3);line-height:1.55}
+.disclaimer b{color:var(--ink-2)}
+.switch{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-2);cursor:pointer}
+.switch input{width:17px;height:17px;accent-color:var(--accent);cursor:pointer}
+/* ---- lesson player ---- */
+.lessongrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.lcard{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .15s,border-color .15s}
+.lcard:hover{transform:translateY(-2px);border-color:var(--accent)}
+.lcard-art{aspect-ratio:16/9;background:#141B19;position:relative;display:block;width:100%}
+.lcard-art canvas{width:100%;height:100%;display:block}
+.lcard-dur{position:absolute;right:8px;bottom:8px;font-family:var(--font-mono);font-size:11px;
+  color:#fff;background:rgba(0,0,0,.65);padding:3px 7px;border-radius:4px;font-variant-numeric:tabular-nums}
+.lcard-seen{position:absolute;left:8px;top:8px;font-size:11px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:#fff;background:var(--go);padding:3px 8px;border-radius:4px}
+.lcard-b{padding:14px 15px;display:flex;flex-direction:column;gap:5px}
+.lcard-b h3{font-size:15.5px}
+.lcard-b p{font-size:13px;color:var(--ink-2);line-height:1.45}
+.lcard-b .mode-meta{margin-top:2px}
+
+.player{display:flex;flex-direction:column;gap:14px}
+.stage{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;
+  background:#141B19;border:1px solid var(--line);box-shadow:var(--shadow)}
+.stage canvas{width:100%;height:100%;display:block}
+.stage-veil{position:absolute;inset:0;display:grid;place-items:center;background:rgba(8,14,12,.5);
+  opacity:0;pointer-events:none;transition:opacity .18s}
+.stage.is-paused .stage-veil{opacity:1;pointer-events:auto}
+.bigplay{width:76px;height:76px;border-radius:50%;background:rgba(255,255,255,.95);color:#111;
+  border:0;display:grid;place-items:center;box-shadow:0 8px 26px rgba(0,0,0,.45);cursor:pointer}
+.bigplay svg{width:30px;height:30px;margin-left:3px}
+.scene-tag{position:absolute;left:13px;top:13px;font-family:var(--font-mono);font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.55);
+  padding:5px 10px;border-radius:5px}
+
+.controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.ctrl{width:40px;height:40px;flex:none;border-radius:10px;border:1px solid var(--line-2);
+  background:var(--surface);display:grid;place-items:center;transition:border-color .15s,background .15s}
+.ctrl:hover{border-color:var(--accent);background:var(--accent-soft)}
+.ctrl svg{width:17px;height:17px;fill:currentColor}
+.ctrl-main{background:var(--guide);border-color:var(--guide);color:var(--on-guide)}
+.ctrl-main:hover{background:var(--guide);border-color:var(--guide);filter:brightness(1.12)}
+.scrub{flex:1;min-width:130px;accent-color:var(--accent);height:6px;cursor:pointer}
+.time{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none}
+.rate{font-family:var(--font-mono);font-size:12.5px;padding:8px 10px;border-radius:8px;
+  border:1px solid var(--line-2);background:var(--surface);flex:none}
+
+.caption{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:11px;padding:16px 18px;min-height:92px;display:flex;flex-direction:column;gap:7px}
+.caption .eyebrow{font-size:10.5px}
+.caption p{font-size:16.5px;line-height:1.5;text-wrap:balance}
+.chapters{display:flex;gap:7px;flex-wrap:wrap}
+.chapter{font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:99px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink-2);transition:all .15s}
+.chapter:hover{border-color:var(--accent);color:var(--ink)}
+.chapter[aria-current="true"]{background:var(--accent-soft);color:var(--accent);
+  border-color:color-mix(in srgb,var(--accent) 30%,transparent)}
+.chapter b{font-family:var(--font-mono);font-weight:700;opacity:.65;margin-right:5px}
+.transcript{display:flex;flex-direction:column;gap:10px}
+.tr-scene{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:14px 17px}
+.tr-scene h4{font-size:14px;margin-bottom:7px}
+.tr-scene li{font-size:14px;color:var(--ink-2);line-height:1.55;margin-bottom:4px}
+.tr-scene ol{margin:0;padding-left:20px}
+@media (max-width:560px){.time{order:5;width:100%;text-align:center}.caption p{font-size:15.5px}}
+.fade{animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<noscript>
+  <div style="max-width:640px;margin:60px auto;padding:0 20px;font:16px/1.6 system-ui,sans-serif">
+    <h1 style="font-size:26px">Arizona Permit Prep</h1>
+    <p>This study app needs JavaScript to run the practice tests and lessons.
+       Please enable JavaScript and reload the page.</p>
+  </div>
+</noscript>
+<header class="masthead">
+  <div class="masthead-in">
+    <button class="brand" data-act="go" data-view="home">
+      <span class="marker">AZ</span>
+      <span class="brand-txt"><b>Permit Prep</b><span>MVD Class G &middot; Written</span></span>
+    </button>
+    <nav class="nav" id="nav"></nav>
+  </div>
+</header>
+
+<main><div class="wrap" id="app"></div></main>
+
+<script>
+const CATS = {
+  signs: {name:"Signs, Signals & Markings", blurb:"Shapes, colors, lights and pavement lines"},
+  row:   {name:"Right-of-Way",              blurb:"Who goes first, and when to give way"},
+  speed: {name:"Speed, Lanes & Space",      blurb:"Limits, following distance, passing"},
+  share: {name:"Sharing the Road",          blurb:"Bikes, motorcycles, trucks, pedestrians"},
+  law:   {name:"Alcohol, Drugs & the Law",  blurb:"DUI limits, penalties, points, insurance"},
+  az:    {name:"Arizona Rules & Licensing", blurb:"Permit rules, Class G, state-specific law"},
+  emerg: {name:"Emergencies & Weather",     blurb:"Dust storms, floods, skids, breakdowns"},
+  park:  {name:"Parking & Vehicle Basics",  blurb:"Curb distances, hills, mirrors, brakes"}
+};
+
+const QB = [
+/* ---------------- SIGNS, SIGNALS & MARKINGS ---------------- */
+["signs","An eight-sided (octagonal) sign always means:",["Come to a complete stop","Slow down and look both ways","Yield to cross traffic","The road narrows ahead"],0,"The octagon is reserved for one message only \u2014 STOP. Come to a full stop at the stop line, the crosswalk, or the corner, whichever you reach first."],
+["signs","A yellow diamond-shaped sign tells you:",["There is a hazard or change in conditions ahead","You must stop","A law is being enforced here","You are entering a work zone"],0,"Yellow diamonds are warning signs. They give you advance notice of something ahead \u2014 a curve, a crossing, a merge \u2014 so you can slow down before you reach it."],
+["signs","A sign shaped like a pennant (a long horizontal triangle) posted on the LEFT side of the road marks:",["The start of a no-passing zone","A scenic viewpoint","A truck route","The end of a divided highway"],0,"The no-passing pennant is the only sign normally posted on the left. It marks where the no-passing zone begins."],
+["signs","A five-sided (pentagon) sign means:",["School zone or school crossing ahead","Emergency route","Historic marker","Farm equipment crossing"],0,"The pentagon is used only for schools. Expect children, reduced speed limits, and crossing guards."],
+["signs","A round yellow sign with a large X and two R's means:",["A railroad crossing is ahead","A rest area is ahead","Roundabout ahead","Rough road ahead"],0,"The round yellow RXR sign is an advance warning that railroad tracks cross the road ahead. Slow down and be ready to stop."],
+["signs","Orange traffic signs indicate:",["A construction or maintenance work zone","A wrong-way entrance","A hazardous cargo route","A detour for trucks only"],0,"Orange means people are working on or near the road. Slow down, expect lane shifts and workers on foot \u2014 Arizona doubles fines in work zones."],
+["signs","Brown signs point you toward:",["Parks, recreation areas and cultural sites","Hospitals","Freeway exits","Weigh stations"],0,"Brown is the color for recreational and cultural interest areas \u2014 national parks, monuments, campgrounds, historic sites."],
+["signs","Blue signs give you:",["Motorist services such as gas, food, lodging and hospitals","Speed limits","Warnings about the road surface","Distances to the next city"],0,"Blue is the services color. Green handles directions and distances; blue tells you where to eat, sleep, fuel up or find a hospital."],
+["signs","Green signs are used for:",["Directions, distances and destinations","Regulations you must obey","Warnings about hazards","Construction detours"],0,"Green is the guide-sign color: which exit, which direction, how many miles."],
+["signs","A white rectangular sign means:",["It states a traffic law you must obey","It warns of a hazard","It gives tourist information","It marks a private road"],0,"White rectangles are regulatory signs \u2014 speed limits, turn restrictions, lane use. Ignoring one is a traffic violation."],
+["signs","A flashing RED traffic light means:",["Stop completely, then go when it is safe","Slow down and proceed","The signal is broken \u2014 proceed normally","Stop and wait for the light to change"],0,"A flashing red is treated exactly like a stop sign: full stop, yield to traffic and pedestrians, then proceed when clear."],
+["signs","A flashing YELLOW traffic light means:",["Slow down and proceed with caution","Stop before entering the intersection","Prepare to stop for a red light","Yield to traffic on your left only"],0,"Flashing yellow means the intersection needs extra care but you do not have to stop. Slow down and look before entering."],
+["signs","A steady yellow traffic light means:",["The light is about to turn red \u2014 stop if you can do so safely","Speed up to clear the intersection","Stop immediately no matter what","The light is about to turn green"],0,"Yellow is a warning that red is coming. Stop if you can do so safely; if you are already too close to stop, continue through with care."],
+["signs","A green arrow shown with a red light means:",["You may turn in the direction of the arrow \u2014 that movement is protected","You may go straight only","You must wait for the red to clear first","Turn only if no sign forbids it"],0,"A green arrow is a protected movement. Conflicting traffic is being held by a red light, but you must still yield to any pedestrians already in the crosswalk."],
+["signs","A red arrow at a signal means:",["You must stop and may not turn in that direction","You may turn after stopping","You may turn if traffic is clear","Yield and proceed"],0,"A red arrow prohibits that movement entirely. Wait for the arrow to change \u2014 you cannot treat it as a stop sign."],
+["signs","A solid white line between lanes going the same direction means:",["Stay in your lane \u2014 changing lanes is discouraged or prohibited","Passing is allowed","The lane ends ahead","The lane is for buses only"],0,"Solid white discourages lane changes; a double solid white forbids them. Broken white lines mark lanes you may change between."],
+["signs","A broken yellow line on your side of the center means:",["You may pass when the way ahead is clear","You may never pass","Passing is allowed only at intersections","The road becomes one-way ahead"],0,"Yellow separates traffic going opposite directions. Broken on your side means you may cross to pass when it is safe."],
+["signs","Two solid yellow lines down the center of the road mean:",["Neither direction may pass","Only the left lane may pass","Passing is allowed with caution","The road is divided by a median"],0,"A double solid yellow is a no-passing line for both directions. You may still cross it to turn left into a driveway or street."],
+["signs","A solid yellow line on your side and a broken yellow line on the other side means:",["You may not pass, but oncoming traffic may","Both directions may pass","Neither direction may pass","You may pass only on a hill"],0,"Read the line closest to you. Solid on your side means you stay put; the broken line belongs to the other direction."],
+["signs","A traffic signal is completely dark because of a power failure. You should:",["Treat the intersection as a four-way stop","Proceed without stopping if no one is coming","Follow the car ahead through","Turn around and find another route"],0,"When signals go dark, Arizona law requires you to treat the intersection as an all-way stop. Stop, then take turns."],
+["signs","A yield sign is shaped like:",["A downward-pointing triangle","A diamond","A circle","A square"],0,"The downward triangle is used only for YIELD. Slow, be ready to stop, and give the right-of-way to traffic and pedestrians."],
+["signs","You come to a white rectangular sign reading KEEP RIGHT next to a median. You must:",["Pass to the right of the divider","Pass on either side","Stop before the divider","Merge left"],0,"KEEP RIGHT is regulatory. The obstruction or median must stay on your left."],
+["signs","A yellow diamond showing a curved arrow means:",["The road turns or curves ahead \u2014 slow to a safe speed","There is a detour ahead","A ramp merges ahead","There is a scenic overlook"],0,"Curve and turn warnings are advisory: the posted advisory speed is the maximum safe speed for that curve in good conditions."],
+
+/* ---------------- RIGHT-OF-WAY ---------------- */
+["row","Two cars reach a four-way stop at exactly the same moment. Who goes first?",["The driver on the right","The driver on the left","The driver going straight","The larger vehicle"],0,"At a tie, yield to the vehicle on your right. If you are both going straight and arrived together, the car to your right proceeds first."],
+["row","You arrive at an intersection with no signs or signals and another car is already in the intersection. You should:",["Yield to the vehicle already in the intersection","Proceed \u2014 you have the right-of-way","Sound your horn and continue","Back up"],0,"A vehicle already lawfully in an uncontrolled intersection has the right-of-way. Yield to it."],
+["row","You are turning left at a green light with no arrow. You must:",["Yield to oncoming traffic and pedestrians before turning","Turn first because you arrived first","Proceed \u2014 the green protects your turn","Stop and wait for a red"],0,"A plain green is a permissive turn, not a protected one. You may enter the intersection but must wait for a safe gap."],
+["row","You are pulling out of a driveway onto a street. You must yield to:",["Traffic on the street and pedestrians on the sidewalk","Traffic on the street only","Pedestrians only","No one, if you signal"],0,"Vehicles entering the roadway from a driveway, alley or private road yield to everything already there \u2014 including anyone on the sidewalk you cross."],
+["row","When entering a roundabout you must:",["Yield to traffic already circulating, then enter and travel counterclockwise","Stop completely and wait for a gap","Enter clockwise and merge left","Take the right-of-way over circulating traffic"],0,"Roundabout traffic flows counterclockwise and vehicles inside the circle have the right-of-way. Yield at the entry, then merge into a gap."],
+["row","A pedestrian steps into an unmarked crosswalk at an intersection. You must:",["Yield \u2014 unmarked crosswalks carry the same right-of-way as painted ones","Continue, because the crosswalk is not painted","Sound your horn","Yield only if a sign is posted"],0,"Every intersection has a crosswalk whether or not it is painted. Pedestrians in it have the right-of-way."],
+["row","A pedestrian with a white cane or a guide dog is crossing ahead of you. You must:",["Always stop and yield","Yield only if they are in a marked crosswalk","Honk to alert them","Drive slowly around them"],0,"A white cane or guide dog signals a blind or visually impaired pedestrian. Arizona law requires you to stop and yield anywhere they are crossing."],
+["row","An emergency vehicle is approaching with lights and siren on. You should:",["Pull over to the right edge of the road and stop until it passes","Speed up to clear the intersection","Stop immediately where you are","Move to the left lane"],0,"Pull to the right and stop clear of intersections. Never stop in the middle of a lane or block the path."],
+["row","A school bus on an undivided road has stopped with its red lights flashing. Traffic must:",["Stop in both directions until the lights stop flashing","Stop only if traveling behind the bus","Slow to 15 mph and pass carefully","Pass on the left with caution"],0,"On a road without a physical median, everyone stops in both directions and stays stopped until the red lights go off and the bus moves."],
+["row","A school bus with flashing red lights is stopped on the opposite side of a divided highway with a raised median. You:",["Do not have to stop \u2014 only traffic behind the bus must stop","Must stop anyway","Must slow to 10 mph","Must stop only if children are visible"],0,"A physical barrier or raised median separates the roadways, so oncoming traffic may continue. A painted center line is NOT a divider \u2014 there you must stop."],
+["row","You are on a road that ends at a T-intersection. You must:",["Yield to traffic on the through road","Proceed \u2014 through traffic yields to you","Stop only if a sign is posted","Merge without stopping"],0,"At a T-intersection the road that ends yields to the road that continues."],
+["row","You are merging onto a freeway from an on-ramp. You should:",["Use the ramp to match the speed of traffic, then merge into a gap","Stop at the end of the ramp and wait","Merge at whatever speed you are traveling","Expect freeway traffic to move over for you"],0,"The acceleration lane exists so you can reach highway speed. Traffic already on the freeway has the right-of-way."],
+["row","When a funeral procession is passing, you should:",["Yield and never cut through the procession","Merge into the gaps to keep traffic moving","Pass on the right at reduced speed","Stop completely until it is fully clear, even on a divided road"],0,"Yield to the procession and do not drive between vehicles in it, even if there is a gap."],
+["row","Two vehicles meet on a steep, narrow mountain road where only one can pass. Which one backs up?",["The vehicle facing downhill","The vehicle facing uphill","The smaller vehicle","Whichever arrived second"],0,"The driver facing downhill backs up. Backing uphill gives less control, and the downhill driver has gravity assisting the maneuver."],
+["row","The light turns green but traffic is backed up through the intersection. You should:",["Wait behind the line until you can clear the intersection completely","Enter the intersection and wait there","Proceed slowly into the crosswalk","Turn right instead"],0,"Blocking an intersection is a violation. Do not enter until there is room on the far side for your whole vehicle."],
+["row","Right-of-way at an intersection is best described as:",["Something you give, never something you take","A legal claim you may assert","Determined by vehicle size","Always held by the faster vehicle"],0,"The law says who must yield \u2014 it never grants anyone the right to force their way through. Give it up rather than risk a crash."],
+["row","You want to turn right at a red light. You must first:",["Come to a complete stop and yield, unless a sign prohibits the turn","Slow and roll through if clear","Wait for a green arrow","Yield only to pedestrians"],0,"Right on red is legal in Arizona after a complete stop, unless a NO TURN ON RED sign is posted. Yield to pedestrians and cross traffic."],
+
+/* ---------------- SPEED, LANES & SPACE ---------------- */
+["speed","With no sign posted, the speed limit in an Arizona business or residential district is:",["25 mph","15 mph","35 mph","45 mph"],0,"Arizona's default limit in business and residential districts is 25 mph."],
+["speed","The speed limit in a school zone when the crossing is in operation is:",["15 mph","20 mph","25 mph","10 mph"],0,"School zones drop to 15 mph. The limit applies whenever the zone is active \u2014 watch for signs, flashing beacons and crossing guards."],
+["speed","The maximum speed limit on Arizona rural interstate highways, where posted, is:",["75 mph","65 mph","70 mph","80 mph"],0,"Arizona posts up to 75 mph on rural interstates. Outside those, 65 mph is the general highway maximum."],
+["speed","Arizona's basic speed law says you must:",["Never drive faster than is reasonable and prudent for the conditions","Always drive the posted limit","Match the speed of surrounding traffic","Stay within 10 mph of the limit"],0,"Even at or below the posted limit you can be cited if your speed is unsafe for rain, dust, traffic or visibility."],
+["speed","In good conditions, the minimum following distance you should keep is:",["Two seconds","One car length","Half a second","Ten feet per 10 mph"],0,"Pick a fixed object, count when the car ahead passes it, and you should not reach it before two seconds. Add more in rain, dust or at night."],
+["speed","When following a motorcycle you should increase your following distance to:",["Three to four seconds","One second","Two seconds","Five car lengths"],0,"Motorcycles can stop faster than a car and may need to swerve for road hazards. Give them three to four seconds of space."],
+["speed","After passing another vehicle, you may return to your lane when:",["You can see the whole vehicle in your rearview mirror","You have cleared its front bumper","You have passed for at least 100 feet","The other driver flashes their lights"],0,"Seeing both headlights of the passed car in your mirror means you have enough room to return without cutting them off."],
+["speed","Passing is prohibited:",["Within 100 feet of an intersection, railroad crossing, bridge or tunnel","Only where a sign forbids it","Only on two-lane roads","Only at night"],0,"You also may not pass on a hill or curve where you cannot see far enough ahead to complete the pass safely."],
+["speed","On a multi-lane highway, the left lane is intended for:",["Passing \u2014 otherwise keep right","The fastest drivers","Trucks and buses","Carpools only"],0,"Keep right except to pass. Camping in the left lane blocks traffic and is a citable offense."],
+["speed","Before changing lanes you should:",["Signal, check your mirrors, then look over your shoulder at the blind spot","Signal and change immediately","Check mirrors only","Speed up first"],0,"Mirrors do not cover the blind spot. A quick head turn is the only way to see a vehicle beside you."],
+["speed","You must signal before turning or changing lanes for at least:",["100 feet","25 feet","50 feet","300 feet"],0,"Arizona requires a continuous signal for at least 100 feet before the turn \u2014 more at highway speeds."],
+["speed","To make a right turn you should:",["Turn from the far-right lane into the nearest right lane","Swing wide from the middle lane","Turn from any lane if clear","Use the left lane to get a better angle"],0,"Right turns go from the rightmost lane into the rightmost lane of the road you enter."],
+["speed","A driver is tailgating you. The safest response is:",["Increase your own following distance and let them pass","Brake to warn them","Speed up to open a gap","Flash your brake lights repeatedly"],0,"Give yourself more room in front so you can brake gradually, and move over when you safely can."],
+["speed","Hydroplaning \u2014 riding on a film of water instead of the pavement \u2014 can begin at speeds as low as:",["35 mph","55 mph","70 mph","15 mph"],0,"On standing water, tires can lose contact around 35 mph. Slow down and avoid puddles and ruts."],
+["speed","Driving far below the speed of surrounding traffic is:",["Dangerous and can be illegal \u2014 you may not impede normal traffic","Always the safest choice","Legal on any road","Only a problem on freeways"],0,"Impeding traffic creates passing conflicts. If you must go slow, keep right and use turnouts."],
+["speed","In a work zone you should expect:",["Reduced speed limits, lane shifts, workers on foot \u2014 and doubled fines","Normal traffic flow","Wider lanes","Signals to be turned off"],0,"Arizona doubles fines for speeding in work zones. Merge early, follow flaggers, and leave extra space."],
+["speed","The safest gap to leave when stopped behind another car in traffic is:",["Enough to see their rear tires touching the pavement","Half a car length","Bumper to bumper","Three car lengths"],0,"Seeing the tires meet the road gives you room to steer around them if the car stalls, and cushions you if you are rear-ended."],
+["speed","Your total stopping distance is made up of:",["Perception distance, reaction distance and braking distance","Braking distance only","Reaction distance only","Speed divided by weight"],0,"You travel a long way before the brakes even engage. Doubling your speed roughly quadruples the braking distance."],
+
+/* ---------------- SHARING THE ROAD ---------------- */
+["share","When passing a bicyclist in Arizona you must leave a safe distance of at least:",["Three feet","One foot","Six feet","Two feet"],0,"Arizona law requires at least three feet of clearance when overtaking a bicycle. Wait for a safe gap rather than squeezing past."],
+["share","Motorcycles are entitled to:",["A full lane of travel \u2014 never share a lane with one","Half a lane","The shoulder only","The left lane only"],0,"A motorcycle has the same right to a full lane as a car. Passing one within its own lane is illegal and dangerous."],
+["share","Large trucks have blind spots called No-Zones. The rule of thumb is:",["If you cannot see the driver's mirrors, the driver cannot see you","Trucks have no blind spots","The blind spot is only behind the trailer","Only the left side is blind"],0,"The biggest No-Zones are directly behind, alongside the cab, and the right rear quarter. Move through them quickly."],
+["share","After passing a large truck, you should not pull back in front until:",["You can see the entire truck in your rearview mirror","Your rear bumper clears the cab","You have passed its front tires","The truck flashes its lights"],0,"Trucks need far more distance to stop. Cutting in close removes the space they need."],
+["share","A large truck signaling a right turn swings to the left first. You should:",["Stay back \u2014 do not try to pass on the right","Pass quickly on the right","Pass on the left","Sound your horn"],0,"Long trailers need a wide arc. The gap on the right is the space the trailer will sweep through."],
+["share","Bicyclists on Arizona roads:",["Have the same rights and responsibilities as drivers","Must always ride on the sidewalk","Must yield to all vehicles","May ignore traffic signals"],0,"A bicycle is legally a vehicle. Riders obey signals and signs, and drivers must treat them as traffic."],
+["share","Arizona's Move Over law requires that when you approach a stopped emergency, tow or utility vehicle with flashing lights you:",["Move over one lane if you can, or slow down if you cannot","Stop completely","Maintain speed and stay in your lane","Sound your horn and pass"],0,"Move over a lane when it is safe. If traffic makes that impossible, slow down significantly as you pass."],
+["share","A motorcyclist moves from one side of the lane to the other. This usually means:",["They are avoiding road hazards or improving visibility \u2014 give them room","They are inviting you to pass","They intend to change lanes","They are losing control"],0,"Riders shift position to dodge gravel, oil and potholes, and to stay visible. Do not crowd them."],
+["share","When you see children playing near the roadway you should:",["Slow down and cover the brake \u2014 children are unpredictable","Sound the horn continuously","Maintain speed","Move to the left lane and continue"],0,"A child may dart out from between parked cars without looking. Reduce speed and be ready to stop."],
+["share","A crossing guard signals you to stop, but the light is green. You should:",["Obey the crossing guard","Obey the light and proceed","Proceed slowly through","Stop only if children are present"],0,"Directions from a crossing guard or police officer override signs and signals."],
+["share","An orange triangle emblem on the back of a vehicle means:",["The vehicle travels 25 mph or less","The vehicle carries hazardous material","The vehicle is a student driver","The vehicle is disabled"],0,"The slow-moving vehicle emblem marks farm equipment and other vehicles that cannot keep up with traffic. Slow early."],
+["share","When following an emergency vehicle that is responding to a call, you must stay back at least:",["500 feet","100 feet","50 feet","1,000 feet"],0,"Arizona requires 500 feet of separation. Following closely blocks other responders and can put you into the scene."],
+["share","When passing a horse and rider on a rural road you should:",["Slow down, give wide clearance and avoid sounding the horn","Speed up to pass quickly","Honk to warn the rider","Flash your headlights"],0,"Sudden noise can spook a horse. Pass slowly and give as much room as the road allows."],
+["share","A pedestrian is crossing against the signal in the middle of the block. You should:",["Yield \u2014 avoiding the collision is your responsibility","Continue, since they are at fault","Sound your horn and proceed","Swerve around them"],0,"Even when a pedestrian is in the wrong, you must do everything you reasonably can to avoid hitting them."],
+
+/* ---------------- ALCOHOL, DRUGS & THE LAW ---------------- */
+["law","For a driver 21 or older, Arizona's legal blood alcohol concentration limit is:",["0.08%","0.10%","0.05%","0.02%"],0,"0.08% is the per se limit for adults. You can still be convicted below it if alcohol impairs you to the slightest degree."],
+["law","For a driver under 21 in Arizona, the legal amount of alcohol in your system is:",["Zero \u2014 any measurable alcohol is a violation","0.08%","0.05%","0.02%"],0,"Arizona has zero tolerance for drivers under 21. Any alcohol at all can mean a suspended license."],
+["law","The BAC limit for a driver operating a commercial vehicle is:",["0.04%","0.08%","0.02%","0.06%"],0,"Commercial drivers are held to half the standard limit \u2014 0.04%."],
+["law","In Arizona, Extreme DUI begins at a blood alcohol concentration of:",["0.15%","0.10%","0.20%","0.12%"],0,"At 0.15% or above the charge escalates to Extreme DUI, with mandatory jail time and much larger fines."],
+["law","Arizona can charge you with DUI below 0.08% if:",["You are impaired to the slightest degree","You refuse a breath test","You are driving at night","You have an open container"],0,"Arizona's impairment standard does not depend on hitting a number. Prescription drugs and marijuana can trigger it too."],
+["law","Under Arizona's implied consent law, refusing a chemical test after a lawful DUI arrest results in:",["License suspension for 12 months on a first refusal","A warning only","A $100 fine","Nothing, since testing is voluntary"],0,"By driving in Arizona you have already consented to testing. A first refusal costs you your license for a year; a second within 84 months costs two years."],
+["law","The only thing that reduces your blood alcohol concentration is:",["Time","Coffee","A cold shower","Eating a large meal"],0,"Your liver processes alcohol at a fixed rate. Nothing speeds it up \u2014 food only slows absorption on the way in."],
+["law","Alcohol affects which driving ability first?",["Judgment and inhibition","Vision","Reaction time","Steering control"],0,"Judgment goes first, which is why impaired drivers underestimate how impaired they are."],
+["law","Prescription and over-the-counter medications:",["Can impair driving \u2014 read the label and check for warnings","Are always safe to drive on","Only matter if combined with alcohol","Are never grounds for a DUI"],0,"Antihistamines, sleep aids and painkillers can impair you badly enough to be charged with DUI."],
+["law","Under Arizona's hands-free law, while driving you may not:",["Hold or support a phone in your hand or with your body","Use any phone function at all","Talk on a hands-free device","Use a GPS mounted on the dash"],0,"The phone must be mounted or used hands-free. Holding it \u2014 even at a red light \u2014 is a violation."],
+["law","Accumulating 8 or more points on your Arizona driving record within 12 months can result in:",["Suspension of your license or an order to attend Traffic Survival School","A written warning","An automatic insurance discount","No consequence for first offenders"],0,"Points build up fast \u2014 a single DUI is 8 points on its own."],
+["law","Arizona's minimum required liability insurance is:",["$25,000 per person / $50,000 per accident / $15,000 property damage","$15,000 / $30,000 / $10,000","$50,000 / $100,000 / $25,000","$10,000 / $20,000 / $5,000"],0,"Those are the 25/50/15 minimums. You must carry proof of insurance and show it on request."],
+["law","Arizona's seat belt law requires that:",["The driver and front-seat passengers wear belts, and everyone under 16 is belted anywhere in the vehicle","Only the driver wears a belt","Belts are optional for adults","Only passengers in the back seat wear belts"],0,"Under-16 passengers must be restrained in every seating position \u2014 the driver is responsible for them."],
+["law","A child must ride in a child restraint or booster seat in Arizona until they are:",["8 years old AND at least 4 feet 9 inches tall","5 years old","6 years old or 50 pounds","10 years old"],0,"Both conditions matter \u2014 a child who is 8 but shorter than 4'9\" still needs a booster."],
+["law","Carrying an open container of alcohol in the passenger area of a vehicle is:",["Illegal, whether or not the driver has been drinking","Legal if the driver is sober","Legal for passengers only","Legal if the container is closed again"],0,"Open containers belong in the trunk or an area not occupied by people."],
+["law","After a crash involving injury, death or property damage you must:",["Stop, help the injured, exchange information and notify police","Leave if the damage looks minor","Exchange information only if asked","Move the cars and continue"],0,"Leaving the scene turns a crash into a criminal offense. Stop, render aid and report it."],
+["law","Another driver is behaving aggressively toward you. The safest response is:",["Avoid eye contact, do not respond, and put distance between you","Match their speed to show you are not intimidated","Brake hard to warn them","Sound the horn repeatedly"],0,"Engaging escalates. Get out of the way, and call police from a safe place if you feel threatened."],
+["law","Driving on a suspended or revoked license in Arizona:",["Is a criminal offense that can extend the suspension and add jail time","Is a minor infraction","Is allowed for work travel","Only matters if you cause a crash"],0,"It is a misdemeanor. Wait until the license is reinstated before driving."],
+
+/* ---------------- ARIZONA RULES & LICENSING ---------------- */
+["az","The minimum age to get an Arizona instruction permit is:",["15 years and 6 months","15 years","16 years","14 years and 6 months"],0,"You may apply at 15 years and 6 months after passing the written knowledge and vision tests."],
+["az","While driving on an Arizona instruction permit you must be accompanied by:",["A licensed driver at least 21 years old seated beside you","Any licensed driver","A parent only","A licensed driver at least 18 years old"],0,"The supervising driver must be 21 or older, licensed, and in the front passenger seat where they can help."],
+["az","The Arizona written permit test consists of:",["30 questions, and you must answer 24 correctly to pass","25 questions with 20 correct to pass","40 questions with 30 correct to pass","50 questions with 40 correct to pass"],0,"You need 80% \u2014 24 out of 30. That is why the practice exam in this app is built the same way."],
+["az","To get a Class G graduated driver license at 16, you must have held your permit for at least:",["6 months, and completed 30 hours of supervised driving (10 at night)","3 months and 20 hours of practice","1 year and 50 hours of practice","30 days and 10 hours of practice"],0,"Six months on the permit plus a certified log of 30 practice hours, at least 10 of them after dark."],
+["az","For the first 6 months with a Class G license, you may not carry:",["More than one passenger under 18 who is not an immediate family member","Any passengers at all","More than three passengers","Passengers over 18"],0,"Siblings and other immediate family do not count against the limit."],
+["az","A Class G license holder generally may not drive between:",["Midnight and 5 a.m.","10 p.m. and 6 a.m.","11 p.m. and 4 a.m.","1 a.m. and 6 a.m."],0,"Exceptions cover travel to or from work or school, a family emergency, or driving with a parent or guardian 21 or older."],
+["az","You may turn left on a red light in Arizona when:",["Turning from a one-way street onto another one-way street, after stopping","Never","Any time traffic is clear","Only between midnight and 5 a.m."],0,"Stop completely first, yield to pedestrians and cross traffic, and only if no sign prohibits it."],
+["az","You must use your headlights:",["From sunset to sunrise, and whenever visibility is less than 500 feet","Only between 10 p.m. and 5 a.m.","Only in rain","Only on unlit roads"],0,"Dust, rain and smoke all trigger the 500-foot rule. Daytime running lights do not count as headlights."],
+["az","You must dim your high beams when an oncoming vehicle is within:",["500 feet","200 feet","100 feet","1,000 feet"],0,"Dim at 500 feet for oncoming traffic, and within 200 feet when following another vehicle."],
+["az","After moving, you must notify the Arizona MVD of your new address within:",["10 days","30 days","60 days","6 months"],0,"Arizona gives you 10 days. Renewal notices and suspension letters go to the address on file."],
+["az","While driving in Arizona you are required to carry:",["Your license, vehicle registration and proof of insurance","Your license only","Your license and registration only","Only proof of insurance"],0,"All three must be produced on request by a peace officer."],
+["az","You are stopped at a railroad crossing behind another car. You should:",["Never start across until there is room for your entire vehicle on the other side","Follow closely to clear the tracks faster","Cross as soon as the gate lifts","Stop on the tracks if traffic backs up"],0,"Never let your vehicle end up stranded on the tracks. Wait until there is space clear on the far side."],
+["az","Sounding your horn is appropriate:",["To warn others of danger","To express frustration","To greet someone you know","To hurry a slow driver"],0,"The horn is a safety device, not a comment. Use it briefly to alert someone who does not see you."],
+["az","A U-turn is prohibited:",["Where a sign forbids it or where you cannot be seen for 200 feet in each direction","Only on freeways","Only in business districts","Only at night"],0,"Visibility is the key test. If oncoming traffic cannot see you in time, the turn is illegal."],
+["az","On a road with a center left-turn lane (marked with broken yellow lines on both sides), you may:",["Use it only to prepare for a left turn or to turn left from a driveway","Drive in it to pass slower traffic","Use it as a travel lane for up to 300 feet","Park in it briefly"],0,"The shared center lane is for turning, not traveling. Enter it just before your turn."],
+["az","If your Arizona vehicle registration or insurance lapses, you may:",["Have your registration suspended and face fines and reinstatement fees","Continue driving for 90 days","Drive only during daylight","Face no penalty until renewal"],0,"Arizona verifies insurance electronically. Coverage must be continuous."],
+
+/* ---------------- EMERGENCIES & WEATHER ---------------- */
+["emerg","A dust storm is approaching on an Arizona highway. The correct response is:",["Pull completely off the roadway, turn OFF all lights, take your foot off the brake and set the parking brake","Slow down and turn on your hazard lights while continuing","Stop in the travel lane with hazards flashing","Speed up to get through it"],0,"\"Pull Aside, Stay Alive.\" Get fully off the pavement, kill every light, keep your foot off the brake and stay buckled until it passes."],
+["emerg","Why should you turn your lights OFF after pulling off the road in a dust storm?",["So other drivers do not mistake your taillights for the road and drive into you","To save battery power","Because lights reflect off the dust into your eyes","Because it is required at all roadside stops"],0,"Drivers in a whiteout follow any light they can see. A lit car on the shoulder pulls them straight into you."],
+["emerg","You reach a wash or dip covered with flowing water. You should:",["Turn around \u2014 never drive through flooded roadway","Drive through slowly in low gear","Follow another vehicle across","Cross quickly to avoid stalling"],0,"Turn Around, Don't Drown. Under Arizona's Stupid Motorist Law, driving around barricades makes you liable for the cost of your rescue."],
+["emerg","Your car begins to skid. You should:",["Ease off the accelerator and steer in the direction you want the front of the car to go","Brake hard and hold the wheel straight","Accelerate to regain traction","Turn the wheel opposite the skid"],0,"Look where you want to go and steer there smoothly. Sudden braking or steering makes the skid worse."],
+["emerg","Your car starts hydroplaning. You should:",["Ease off the gas and hold the wheel steady until the tires regain grip","Brake firmly","Steer sharply toward the shoulder","Accelerate through the water"],0,"There is no traction to brake or steer with. Gently reduce speed and wait for the tires to reconnect."],
+["emerg","A front tire blows out at highway speed. You should:",["Grip the wheel firmly, ease off the accelerator and let the car slow before steering off the road","Brake hard immediately","Steer sharply onto the shoulder","Accelerate to stabilize"],0,"Hard braking during a blowout can spin the car. Hold your line, coast down, then pull off."],
+["emerg","Your brakes fail. You should:",["Pump the pedal, downshift, then apply the parking brake gradually","Shut off the engine immediately","Pull the parking brake all the way at once","Steer into oncoming traffic to slow down"],0,"Pumping may restore pressure. Downshifting uses the engine to slow you, and the parking brake applied gradually avoids a skid."],
+["emerg","Your accelerator sticks while driving. Your first action should be:",["Shift into neutral and brake, then steer off the road","Turn off the ignition immediately","Pull the parking brake","Open the door and jump out"],0,"Neutral disconnects the engine from the wheels. Shutting off the ignition can lock the steering."],
+["emerg","Your vehicle stalls on railroad tracks with a train approaching. You should:",["Get everyone out immediately and run toward the train at an angle, away from the tracks","Stay in the vehicle and brace","Try to restart the engine until the last moment","Run directly away from the tracks in line with them"],0,"Move toward the train at an angle so flying debris from the impact is thrown behind you, not into your path."],
+["emerg","Your headlights fail at night. You should:",["Turn on hazard lights and pull off the road as soon as it is safe","Continue using the light from other cars","Turn on high beams and continue","Speed up to reach the next exit"],0,"Use hazards, parking lights or turn signals to stay visible while you get off the road."],
+["emerg","Your right wheels drop off the pavement onto a soft shoulder. You should:",["Ease off the gas, hold the wheel straight, then steer back gently when slowed","Brake hard and jerk the wheel back onto the pavement","Accelerate back onto the road","Steer left immediately"],0,"Yanking the wheel back at speed can throw you across the centerline. Slow first, then ease back on."],
+["emerg","When driving into bright low sun you should:",["Use the visor and sunglasses, slow down and increase your following distance","Follow closely to use the car ahead as a shield","Use high beams","Look down at the lane markings"],0,"Glare hides pedestrians and brake lights. A dirty windshield makes it far worse \u2014 keep it clean."],
+["emerg","You are becoming drowsy on a long drive. The only real solution is:",["Pull over somewhere safe and sleep","Drink coffee and continue","Open the windows and turn up the radio","Drive faster to arrive sooner"],0,"Caffeine and cold air buy minutes, not alertness. Microsleeps at highway speed are as dangerous as impairment."],
+["emerg","Overdriving your headlights means:",["You cannot stop within the distance your headlights illuminate","Your high beams are too bright for oncoming traffic","Your lights are aimed too low","You are using high beams in fog"],0,"Low beams light about 350 feet ahead. At high speed, you can outrun that distance."],
+["emerg","You are the first person on the scene of a crash. You should:",["Stop safely, turn on hazards, check for injuries and call 911","Move the injured out of the vehicles","Drive on to avoid blocking traffic","Wait for police before doing anything"],0,"Do not move an injured person unless there is fire or immediate danger \u2014 moving them can worsen spinal injuries."],
+["emerg","In heavy rain or blowing dust, you should use:",["Low beams","High beams","Hazard lights while moving","Parking lights only"],0,"High beams reflect off water and dust straight back at you. Low beams cut through better."],
+
+/* ---------------- PARKING & VEHICLE BASICS ---------------- */
+["park","You may not park within how many feet of a fire hydrant?",["15 feet","10 feet","25 feet","30 feet"],0,"Fifteen feet on either side, so a fire crew can reach the hydrant with hose."],
+["park","You may not park within how many feet of a crosswalk at an intersection?",["20 feet","10 feet","30 feet","50 feet"],0,"Twenty feet keeps the crosswalk visible to approaching drivers."],
+["park","You may not park within how many feet of a stop sign, yield sign or traffic signal?",["30 feet","15 feet","20 feet","50 feet"],0,"Thirty feet keeps the sign or signal visible from a distance."],
+["park","You may not park within how many feet of a railroad crossing?",["50 feet","20 feet","30 feet","100 feet"],0,"Fifty feet clears the sight lines and the path of the train."],
+["park","When parking uphill on a street with a curb, turn your front wheels:",["Away from the curb","Toward the curb","Straight ahead","Sharply to the left"],0,"If the car rolls back, the rear tire catches the curb. Always set the parking brake too."],
+["park","When parking downhill on a street with a curb, turn your front wheels:",["Toward the curb","Away from the curb","Straight ahead","Sharply to the left"],0,"Rolling forward, the front tire wedges into the curb and stops the car."],
+["park","When parking on a hill with no curb, turn your front wheels:",["Toward the edge of the road","Toward the center of the road","Straight ahead","It does not matter"],0,"Point the wheels so a runaway car rolls off the road rather than into traffic."],
+["park","Which of these is a legal place to park?",["A marked space at least 15 feet from a hydrant","On a sidewalk","In front of a driveway","Within an intersection"],0,"You also may not park in a bike lane, on a crosswalk, or on the roadway side of another parked vehicle (double parking)."],
+["park","A curb painted blue indicates:",["Parking for vehicles with a disability placard or plate only","Loading zone","Passenger drop-off only","No parking at any time"],0,"Blue zones require a valid disability placard or plate \u2014 parking there without one carries a heavy fine."],
+["park","Before opening your door into traffic after parallel parking, you should:",["Check your mirror and blind spot for cars and bicycles","Open the door slowly and listen","Signal first","Open the passenger door instead"],0,"An opened door is a serious hazard to cyclists. Look before you open."],
+["park","Your head restraint should be adjusted so the top of it is:",["Level with the top of your ears or higher","At the base of your neck","Below your shoulders","As low as possible"],0,"A properly positioned head restraint limits whiplash in a rear-end collision."],
+["park","You should adjust your seat, mirrors and head restraint:",["Before you start driving","At the first red light","While driving slowly","Only when someone else has used the car"],0,"Anything that takes your eyes or hands away from driving belongs in the routine before you shift into gear."],
+["park","Tire pressure should be checked:",["When the tires are cold, before driving","After driving at highway speed","Only when a tire looks low","Once a year"],0,"Driving heats the air and inflates the reading. Under-inflated tires overheat \u2014 a real hazard in Arizona summer."],
+["park","With anti-lock brakes (ABS), in an emergency stop you should:",["Press the pedal down firmly and hold it while steering","Pump the pedal rapidly","Press lightly and release","Use the parking brake instead"],0,"ABS pumps for you. The pedal will vibrate \u2014 that is normal. Keep the pressure on and steer around the hazard."],
+["park","Your vehicle breaks down on a busy highway. You should:",["Pull as far off the road as possible, turn on hazards and raise the hood","Stop in the right lane and turn on hazards","Stand behind your car to warn traffic","Walk along the roadway for help"],0,"Get the vehicle and yourself away from moving traffic. If traffic is heavy, staying belted inside is often safer than standing outside."],
+["park","When you are backing up, the safest practice is:",["Turn and look over your right shoulder through the rear window","Rely on the backup camera alone","Use only your mirrors","Have a passenger direct you"],0,"Cameras and mirrors both have blind spots. Check behind the vehicle before you get in, then turn and look."],
+["park","Before leaving a parallel parking space you should:",["Signal, check your mirror and look over your shoulder for traffic","Pull out slowly without signaling","Sound your horn","Back up first to gain room"],0,"You are entering a travel lane from a stop. Signal your intent and check the blind spot for cars and bikes."]
+];
+
+/* ---- sign geometry ---- */
+const SH={
+  oct:"30,3 70,3 97,30 97,70 70,97 30,97 3,70 3,30",
+  dia:"50,2 98,50 50,98 2,50",
+  tri:"3,9 97,9 50,95",
+  pen:"50,3 97,40 78,96 22,96 3,40",
+  pnt:"4,14 96,50 4,86"
+};
+const sc=(x,y,s)=>`translate(${x},${y}) scale(${s}) translate(${-x},${-y})`;
+const fill=(p,f,tr="")=>`<polygon points="${p}" fill="${f}"${tr?` transform="${tr}"`:""}/>`;
+const ring=(p,c,w,x,y,s)=>`<polygon points="${p}" fill="none" stroke="${c}" stroke-width="${w}" transform="${sc(x,y,s)}"/>`;
+const warn=(body,bg="#FFD100")=>fill(SH.dia,bg)+ring(SH.dia,"#111",4,50,50,.87)+body;
+const PED='<circle cx="50" cy="22" r="8" fill="#111"/>'+
+  '<path d="M50,31 L50,56" stroke="#111" stroke-width="9" stroke-linecap="round"/>'+
+  '<path d="M50,36 L36,50" stroke="#111" stroke-width="7" stroke-linecap="round"/>'+
+  '<path d="M50,38 L64,47" stroke="#111" stroke-width="7" stroke-linecap="round"/>'+
+  '<path d="M50,55 L39,82" stroke="#111" stroke-width="8" stroke-linecap="round"/>'+
+  '<path d="M50,55 L62,82" stroke="#111" stroke-width="8" stroke-linecap="round"/>';
+
+const SIGNS=[
+{id:"stop",name:"Stop",cls:"Red octagon",
+ art:fill(SH.oct,"#C8102E")+ring(SH.oct,"#fff",4,50,50,.86)+'<text x="50" y="52" font-size="26" fill="#fff">STOP</text>',
+ mean:"Come to a complete stop at the line, crosswalk or corner, then proceed when it is safe.",
+ opts:["Come to a complete stop, then proceed when safe","Slow down and continue if clear","Yield to traffic on the left","Stop only if a vehicle is coming"],c:0,
+ why:"The octagon is used for one message only. A rolling stop is still a violation \u2014 the wheels must stop turning."},
+
+{id:"yield",name:"Yield",cls:"Red and white triangle",
+ art:fill(SH.tri,"#C8102E")+fill(SH.tri,"#fff",sc(50,37.7,.7))+'<text x="50" y="34" font-size="15" fill="#C8102E">YIELD</text>',
+ mean:"Slow down, be ready to stop, and give the right-of-way to traffic and pedestrians.",
+ opts:["Slow down and give the right-of-way to others","Come to a complete stop every time","You have the right-of-way","Merge without slowing"],c:0,
+ why:"You do not always have to stop at a yield sign, but you must be prepared to \u2014 and the other traffic goes first."},
+
+{id:"right-turn",name:"Turn ahead",cls:"Yellow diamond",
+ art:warn('<path d="M38,88 L38,52 Q38,36 54,36 L62,36" stroke="#111" stroke-width="10" fill="none"/><polygon points="84,36 60,23 60,49" fill="#111"/>'),
+ mean:"The road turns sharply to the right ahead. Slow to a safe speed before you reach it.",
+ opts:["The road turns right ahead \u2014 slow down","A right turn is required here","Right turns are prohibited","A side road joins from the right"],c:0,
+ why:"Any advisory speed posted below a turn or curve sign is the maximum safe speed in good conditions."},
+
+{id:"crossroad",name:"Crossroad",cls:"Yellow diamond",
+ art:warn('<rect x="44" y="20" width="12" height="60" fill="#111"/><rect x="20" y="44" width="60" height="12" fill="#111"/>'),
+ mean:"A crossroad intersection is ahead. Watch for traffic entering from either side.",
+ opts:["An intersection is ahead \u2014 watch for cross traffic","A hospital is ahead","A four-way stop is ahead","A pedestrian crossing is ahead"],c:0,
+ why:"The warning tells you traffic may cross your path. It does not tell you who has the right-of-way \u2014 look for signs at the intersection itself."},
+
+{id:"side-road",name:"Side road",cls:"Yellow diamond",
+ art:warn('<rect x="44" y="20" width="12" height="60" fill="#111"/><rect x="56" y="44" width="24" height="12" fill="#111"/>'),
+ mean:"Another road joins from the right ahead. Watch for vehicles entering your road.",
+ opts:["A side road enters from the right ahead","The road ends ahead","You must turn right ahead","A divided highway begins"],c:0,
+ why:"Drivers waiting on the side road may pull out. Cover the brake as you pass the junction."},
+
+{id:"merge",name:"Merge",cls:"Yellow diamond",
+ art:warn('<path d="M42,88 L42,32" stroke="#111" stroke-width="10" fill="none"/><polygon points="42,12 29,38 55,38" fill="#111"/><path d="M70,88 L70,62 Q70,46 54,42" stroke="#111" stroke-width="10" fill="none"/>'),
+ mean:"Traffic is merging into your lane ahead. Adjust your speed and position to let it in.",
+ opts:["Traffic merges into your lane ahead","A lane is added ahead","The right lane exits ahead","Two-way traffic ahead"],c:0,
+ why:"Neither driver has an absolute right-of-way at a merge \u2014 both must adjust speed to blend safely."},
+
+{id:"two-way",name:"Two-way traffic",cls:"Yellow diamond",
+ art:warn('<path d="M36,86 L36,36" stroke="#111" stroke-width="9"/><polygon points="36,16 25,40 47,40" fill="#111"/><path d="M64,14 L64,64" stroke="#111" stroke-width="9"/><polygon points="64,84 53,60 75,60" fill="#111"/>'),
+ mean:"The divided road ahead ends and you will meet oncoming traffic. Keep right.",
+ opts:["Two-way traffic ahead \u2014 the divided road ends","Passing is permitted ahead","A one-way street begins","Lanes shift ahead"],c:0,
+ why:"You are leaving a one-way or divided section. Expect vehicles coming toward you in the next lane over."},
+
+{id:"signal-ahead",name:"Signal ahead",cls:"Yellow diamond",
+ art:warn('<rect x="37" y="14" width="26" height="72" rx="6" fill="#111"/><circle cx="50" cy="31" r="8" fill="#C8102E"/><circle cx="50" cy="50" r="8" fill="#FFD100"/><circle cx="50" cy="69" r="8" fill="#00A651"/>'),
+ mean:"A traffic signal is ahead, often where it is hard to see. Slow down and be ready to stop.",
+ opts:["A traffic signal is ahead \u2014 be ready to stop","The signal ahead is out of service","A flashing beacon is ahead","Stop here and wait for green"],c:0,
+ why:"These are posted where a hill, curve or trees hide the signal until the last moment."},
+
+{id:"stop-ahead",name:"Stop ahead",cls:"Yellow diamond",
+ art:warn(fill(SH.oct,"#C8102E",sc(50,50,.56))+ring(SH.oct,"#fff",7,50,50,.47)),
+ mean:"A stop sign is ahead. Begin slowing now so you can stop at the line.",
+ opts:["A stop sign is ahead \u2014 start slowing down","Stop immediately at this sign","A four-way stop begins here","Stops are prohibited ahead"],c:0,
+ why:"Advance warning signs give you braking distance where the actual sign is hidden until you are close."},
+
+{id:"slippery",name:"Slippery when wet",cls:"Yellow diamond",
+ art:warn('<path d="M20,50 L28,34 L68,34 L80,50 L80,60 L20,60 Z" fill="#111"/><circle cx="33" cy="62" r="7" fill="#111"/><circle cx="69" cy="62" r="7" fill="#111"/><path d="M22,80 q7,-9 14,0 q7,9 14,0" stroke="#111" stroke-width="4" fill="none"/><path d="M50,80 q7,-9 14,0 q7,9 14,0" stroke="#111" stroke-width="4" fill="none"/>'),
+ mean:"The road ahead becomes slippery in wet weather. Slow down and avoid sudden braking or steering.",
+ opts:["The road is slippery when wet \u2014 slow down","A car wash is ahead","Loose gravel ahead","A vehicle inspection station is ahead"],c:0,
+ why:"The first rain after a dry spell is the worst \u2014 oil on the pavement has not washed away yet."},
+
+{id:"hill",name:"Steep grade",cls:"Yellow diamond",
+ art:warn('<path d="M10,84 L90,28 L90,84 Z" fill="#111"/>'),
+ mean:"A steep downgrade is ahead. Shift to a lower gear and check your brakes.",
+ opts:["A steep hill is ahead \u2014 downshift and control your speed","A truck ramp is ahead","A bridge is ahead","The road surface changes ahead"],c:0,
+ why:"Riding the brakes downhill overheats them. Use engine braking in a lower gear instead."},
+
+{id:"ped",name:"Pedestrian crossing",cls:"Fluorescent yellow-green diamond",
+ art:warn(PED,"#C8E600"),
+ mean:"Pedestrians cross here. Slow down, scan both sides, and yield to anyone in the crosswalk.",
+ opts:["A pedestrian crossing is ahead \u2014 yield to people crossing","A school is ahead","A sidewalk ends ahead","Pedestrians are prohibited"],c:0,
+ why:"Arizona uses fluorescent yellow-green for pedestrian, bicycle and school warnings so they stand out from ordinary yellow."},
+
+{id:"bike",name:"Bicycle crossing",cls:"Fluorescent yellow-green diamond",
+ art:warn('<circle cx="27" cy="66" r="15" fill="none" stroke="#111" stroke-width="6"/><circle cx="73" cy="66" r="15" fill="none" stroke="#111" stroke-width="6"/><path d="M27,66 L45,42 L63,42 L73,66" stroke="#111" stroke-width="5" fill="none"/><path d="M45,42 L57,66" stroke="#111" stroke-width="5" fill="none"/><path d="M58,34 L70,34" stroke="#111" stroke-width="5"/><path d="M63,42 L65,34" stroke="#111" stroke-width="5"/>',"#C8E600"),
+ mean:"Bicycles cross or share the road ahead. Watch for riders and give at least three feet when passing.",
+ opts:["Watch for bicycles crossing or sharing the road","A bike lane ends here","Bicycles are prohibited","A bicycle repair station is ahead"],c:0,
+ why:"Arizona law requires at least three feet of clearance when you overtake a bicycle."},
+
+{id:"school",name:"School zone",cls:"Fluorescent yellow-green pentagon",
+ art:fill(SH.pen,"#C8E600")+ring(SH.pen,"#111",4,50,55,.86)+
+   `<g transform="translate(12,33) scale(.5)">${PED}</g><g transform="translate(38,33) scale(.5)">${PED}</g>`,
+ mean:"A school zone or school crossing is ahead. Expect a reduced speed limit and children on foot.",
+ opts:["School zone or school crossing ahead","A playground is ahead","A pedestrian tunnel is ahead","A bus stop is ahead"],c:0,
+ why:"The five-sided shape is used only for schools. When the crossing is in operation, the limit drops to 15 mph."},
+
+{id:"no-passing",name:"No passing zone",cls:"Yellow pennant",
+ art:fill(SH.pnt,"#FFD100")+ring(SH.pnt,"#111",3.5,35,50,.84)+
+   '<text x="32" y="37" font-size="10" fill="#111">NO</text><text x="32" y="50" font-size="10" fill="#111">PASSING</text><text x="32" y="63" font-size="10" fill="#111">ZONE</text>',
+ mean:"The start of a no-passing zone. Do not pass until the zone ends.",
+ opts:["The start of a no-passing zone","A merge lane begins","A truck route begins","A construction zone begins"],c:0,
+ why:"This is the one sign normally posted on the LEFT side of the road, so it stays in your view as you approach."},
+
+{id:"rr-advance",name:"Railroad crossing ahead",cls:"Round yellow",
+ art:'<circle cx="50" cy="50" r="48" fill="#FFD100"/><circle cx="50" cy="50" r="44" fill="none" stroke="#111" stroke-width="4"/><path d="M31,31 L69,69 M69,31 L31,69" stroke="#111" stroke-width="8"/><text x="17" y="50" font-size="21" fill="#111">R</text><text x="83" y="50" font-size="21" fill="#111">R</text>',
+ mean:"A railroad crossing is ahead. Slow down, look and listen, and be ready to stop.",
+ opts:["A railroad crossing is ahead","A roundabout is ahead","A rest area is ahead","Road crews are working ahead"],c:0,
+ why:"The round shape is reserved for railroad advance warnings. Never start across unless there is room for your whole vehicle on the far side."},
+
+{id:"crossbuck",name:"Crossbuck",cls:"White X",
+ art:'<rect x="4" y="42" width="92" height="16" rx="2" fill="#fff" stroke="#111" stroke-width="3" transform="rotate(45 50 50)"/><rect x="4" y="42" width="92" height="16" rx="2" fill="#fff" stroke="#111" stroke-width="3" transform="rotate(-45 50 50)"/>',
+ mean:"You are at the railroad crossing itself. Yield to any train \u2014 trains always have the right-of-way.",
+ opts:["You are at a railroad crossing \u2014 yield to trains","A crossroad intersection is here","Lanes cross ahead","An airport is ahead"],c:0,
+ why:"The crossbuck has the same legal force as a yield sign. A train cannot stop for you \u2014 it may need a mile or more."},
+
+{id:"roadwork",name:"Road work ahead",cls:"Orange diamond",
+ art:warn('<text x="50" y="34" font-size="14" fill="#111">ROAD</text><text x="50" y="52" font-size="14" fill="#111">WORK</text><text x="50" y="70" font-size="14" fill="#111">AHEAD</text>',"#F26522"),
+ mean:"A work zone is ahead. Slow down, expect lane changes and workers on foot \u2014 fines are doubled.",
+ opts:["A work zone is ahead \u2014 slow down, fines are doubled","A detour is required","The road is closed","A weigh station is ahead"],c:0,
+ why:"Orange is the work-zone color. Merge early rather than racing to the end of a closing lane."},
+
+{id:"speed-limit",name:"Speed limit",cls:"White rectangle (regulatory)",
+ art:'<rect x="15" y="5" width="70" height="90" rx="4" fill="#fff" stroke="#111" stroke-width="4"/><text x="50" y="23" font-size="13" fill="#111">SPEED</text><text x="50" y="39" font-size="13" fill="#111">LIMIT</text><text x="50" y="69" font-size="33" fill="#111">45</text>',
+ mean:"The maximum legal speed in good conditions. In bad conditions the safe speed is lower.",
+ opts:["The maximum legal speed under good conditions","The speed you must maintain","The minimum legal speed","A suggested speed only"],c:0,
+ why:"Under Arizona's basic speed law you can still be cited below the posted number if that speed is unsafe for the conditions."},
+
+{id:"do-not-enter",name:"Do not enter",cls:"Red square (regulatory)",
+ art:'<rect x="4" y="4" width="92" height="92" rx="6" fill="#C8102E"/><rect x="22" y="34" width="56" height="15" rx="2" fill="#fff"/><text x="50" y="66" font-size="12" fill="#fff">DO NOT</text><text x="50" y="81" font-size="12" fill="#fff">ENTER</text>',
+ mean:"Do not drive past this sign \u2014 you would be entering a road going the wrong way.",
+ opts:["Do not enter \u2014 this road is closed to you in this direction","Enter only with caution","No trucks beyond this point","Road closed to all traffic"],c:0,
+ why:"It marks exit ramps and one-way streets. If you see one, stop and find another route immediately."},
+
+{id:"wrong-way",name:"Wrong way",cls:"Red rectangle (regulatory)",
+ art:'<rect x="4" y="24" width="92" height="52" rx="4" fill="#C8102E"/><text x="50" y="41" font-size="15" fill="#fff">WRONG</text><text x="50" y="60" font-size="15" fill="#fff">WAY</text>',
+ mean:"You are driving against traffic. Pull over, stop and turn around when it is safe.",
+ opts:["You are going the wrong way \u2014 stop and turn around","The road curves sharply","You are on a detour route","Turns are prohibited"],c:0,
+ why:"This backs up a DO NOT ENTER sign you have already passed. Get off the roadway immediately."},
+
+{id:"one-way",name:"One way",cls:"Black and white rectangle",
+ art:'<rect x="4" y="26" width="92" height="48" rx="3" fill="#111"/><polygon points="84,42 68,32 68,38 18,38 18,46 68,46 68,52" fill="#fff"/><text x="50" y="64" font-size="12" fill="#fff">ONE WAY</text>',
+ mean:"Traffic on this street flows only in the direction of the arrow.",
+ opts:["Traffic flows only in the direction of the arrow","You must turn in the direction of the arrow","One lane is open ahead","Passing is allowed in this direction"],c:0,
+ why:"You may turn left on red from a one-way street onto another one-way street, after stopping."},
+
+{id:"no-uturn",name:"No U-turn",cls:"White regulatory with red circle-slash",
+ art:'<rect x="8" y="8" width="84" height="84" rx="5" fill="#fff" stroke="#111" stroke-width="3"/><path d="M64,76 L64,48 A13,13 0 0 0 38,48 L38,58" stroke="#111" stroke-width="8" fill="none"/><polygon points="38,78 27,56 49,56" fill="#111"/><circle cx="50" cy="50" r="35" fill="none" stroke="#C8102E" stroke-width="7"/><line x1="25" y1="25" x2="75" y2="75" stroke="#C8102E" stroke-width="7"/>',
+ mean:"You may not make a U-turn here.",
+ opts:["U-turns are prohibited here","U-turns are allowed here only","Left turns are prohibited","The road loops back ahead"],c:0,
+ why:"A red circle with a slash always means the pictured action is prohibited. A red circle without a slash means the action is required."},
+
+{id:"keep-right",name:"Keep right",cls:"White rectangle (regulatory)",
+ art:'<rect x="15" y="5" width="70" height="90" rx="4" fill="#fff" stroke="#111" stroke-width="4"/><text x="50" y="26" font-size="14" fill="#111">KEEP</text><text x="50" y="45" font-size="14" fill="#111">RIGHT</text><polygon points="80,72 58,60 58,66 22,66 22,78 58,78 58,84" fill="#111"/>',
+ mean:"Pass to the right of the median or obstruction ahead.",
+ opts:["Pass to the right of the divider ahead","Move into the right lane and stay there","Right turns only","The right lane ends ahead"],c:0,
+ why:"White rectangles are regulatory \u2014 this is a law, not a suggestion."},
+
+{id:"hospital",name:"Hospital",cls:"Blue rectangle (services)",
+ art:'<rect x="6" y="6" width="88" height="88" rx="6" fill="#0057B8"/><text x="50" y="41" font-size="36" fill="#fff">H</text><text x="50" y="76" font-size="12" fill="#fff">HOSPITAL</text>',
+ mean:"A hospital or medical service is nearby, in the direction indicated.",
+ opts:["A hospital or medical service is nearby","A helicopter landing zone is ahead","A rest stop is ahead","A hotel is ahead"],c:0,
+ why:"Blue is the motorist-services color: hospitals, fuel, food, lodging and rest areas."},
+
+{id:"guide",name:"Guide sign",cls:"Green rectangle",
+ art:'<rect x="4" y="18" width="92" height="64" rx="5" fill="#00693E"/><rect x="9" y="23" width="82" height="54" rx="3" fill="none" stroke="#fff" stroke-width="2.5"/><text x="50" y="42" font-size="15" fill="#fff">EXIT 12</text><text x="50" y="62" font-size="12" fill="#fff">2 MILES</text>',
+ mean:"Directions, distances and destinations \u2014 where you are going and how far it is.",
+ opts:["Directions, distances and destinations","A regulation you must obey","A warning about the road ahead","Available roadside services"],c:0,
+ why:"Green guide signs never carry a rule or a warning. They only tell you where things are."},
+
+{id:"recreation",name:"Recreation sign",cls:"Brown rectangle",
+ art:'<rect x="4" y="18" width="92" height="64" rx="5" fill="#6B4B2A"/><rect x="9" y="23" width="82" height="54" rx="3" fill="none" stroke="#fff" stroke-width="2.5"/><text x="50" y="42" font-size="14" fill="#fff">STATE</text><text x="50" y="62" font-size="14" fill="#fff">PARK</text>',
+ mean:"Points you toward parks, campgrounds, monuments and other recreational or cultural sites.",
+ opts:["Parks, campgrounds and cultural or recreational sites","Emergency services","A construction detour","A commercial truck route"],c:0,
+ why:"Brown is used only for recreation and cultural interest \u2014 national parks, historic sites, trailheads."}
+];
+const signArt=id=>{const s=SIGNS.find(x=>x.id===id);return s?`<svg class="sgn" viewBox="0 0 100 100" role="img" aria-label="${s.name} sign">${s.art}</svg>`:"";};
+
+/* ================= lesson stage engine ================= */
+const LW=800, LH=450;
+const C={bg:"#141B19",road:"#39423E",shoulder:"#2A322E",curb:"#6C7973",line:"#F6C244",
+  white:"#EAF0EB",ink:"#FFFFFF",dim:"#93A69B",good:"#4FBE8A",bad:"#E8604F",warn:"#F6C244",
+  blue:"#57A6E8",red:"#C8102E",sand:"#8A7A5E",night:"#0C1210"};
+if(!CanvasRenderingContext2D.prototype.roundRect){
+  CanvasRenderingContext2D.prototype.roundRect=function(x,y,w,h,r){
+    r=Math.min(r,Math.abs(w)/2,Math.abs(h)/2);this.moveTo(x+r,y);
+    this.arcTo(x+w,y,x+w,y+h,r);this.arcTo(x+w,y+h,x,y+h,r);
+    this.arcTo(x,y+h,x,y,r);this.arcTo(x,y,x+w,y,r);this.closePath();return this;};
+}
+const clamp01=v=>v<0?0:v>1?1:v;
+const seg=(p,a,b)=>clamp01((p-a)/(b-a));
+const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+const lerp=(a,b,t)=>a+(b-a)*t;
+
+function mkG(ctx){
+  const g={ctx,W:LW,H:LH};
+  const path=(fn)=>{ctx.beginPath();fn();};
+  g.clear=()=>{ctx.fillStyle=C.bg;ctx.fillRect(0,0,LW,LH);};
+  g.box=(x,y,w,h,c,r=0)=>{ctx.fillStyle=c;path(()=>ctx.roundRect(x,y,w,h,r));ctx.fill();};
+  g.stroke=(x,y,w,h,c,lw=2,r=0)=>{ctx.strokeStyle=c;ctx.lineWidth=lw;
+    path(()=>ctx.roundRect(x,y,w,h,r));ctx.stroke();};
+  g.dot=(x,y,r,c)=>{ctx.fillStyle=c;path(()=>ctx.arc(x,y,r,0,7));ctx.fill();};
+  g.ring=(x,y,r,c,lw=3)=>{ctx.strokeStyle=c;ctx.lineWidth=lw;path(()=>ctx.arc(x,y,r,0,7));ctx.stroke();};
+  g.line=(x1,y1,x2,y2,c,lw=3,dash)=>{ctx.save();ctx.strokeStyle=c;ctx.lineWidth=lw;
+    ctx.lineCap="round";if(dash)ctx.setLineDash(dash);
+    path(()=>{ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);});ctx.stroke();ctx.restore();};
+  g.poly=(pts,c,close=true)=>{ctx.fillStyle=c;path(()=>{pts.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));if(close)ctx.closePath();});ctx.fill();};
+  g.txt=(s,x,y,o={})=>{ctx.save();ctx.fillStyle=o.c||C.ink;
+    const fam=o.mono?'ui-monospace,Menlo,monospace':'-apple-system,system-ui,"Helvetica Neue",Arial,sans-serif';
+    ctx.font=`${o.w||600} ${o.s||16}px ${fam}`;
+    ctx.textAlign=o.a||"left";ctx.textBaseline=o.b||"middle";
+    if(o.alpha!=null)ctx.globalAlpha=o.alpha;
+    ctx.fillText(s,x,y);ctx.restore();};
+  g.arrow=(x1,y1,x2,y2,c,lw=4)=>{const a=Math.atan2(y2-y1,x2-x1),h=6+lw*1.5;
+    g.line(x1,y1,x2-Math.cos(a)*h*.8,y2-Math.sin(a)*h*.8,c,lw);
+    ctx.fillStyle=c;path(()=>{ctx.moveTo(x2,y2);
+      ctx.lineTo(x2-Math.cos(a-.42)*h,y2-Math.sin(a-.42)*h);
+      ctx.lineTo(x2-Math.cos(a+.42)*h,y2-Math.sin(a+.42)*h);});ctx.fill();};
+  g.hroad=(y,h)=>{g.box(0,y-h/2,LW,h,C.road);
+    g.box(0,y-h/2-4,LW,4,C.shoulder);g.box(0,y+h/2,LW,4,C.shoulder);};
+  g.vroad=(x,w)=>{g.box(x-w/2,0,w,LH,C.road);
+    g.box(x-w/2-4,0,4,LH,C.shoulder);g.box(x+w/2,0,4,LH,C.shoulder);};
+  g.car=(x,y,a,col,o={})=>{ctx.save();ctx.translate(x,y);ctx.rotate(a||0);
+    const s=o.s||1;ctx.scale(s,s);
+    ctx.fillStyle="rgba(0,0,0,.30)";path(()=>ctx.roundRect(-23,-9,48,23,6));ctx.fill();
+    g.box(-24,-11,48,22,col,6);
+    g.box(-11,-8,17,16,"rgba(0,0,0,.34)",3);
+    if(o.brake!==false){ctx.fillStyle=o.brake?"#FF6152":"rgba(255,255,255,.28)";
+      path(()=>ctx.roundRect(-24,-9,4,6,1.5));ctx.fill();path(()=>ctx.roundRect(-24,3,4,6,1.5));ctx.fill();}
+    if(o.lights!==false){ctx.fillStyle=o.lights?"#FFF3C4":"rgba(255,255,255,.5)";
+      path(()=>ctx.roundRect(19,-8,5,5,1.5));ctx.fill();path(()=>ctx.roundRect(19,3,5,5,1.5));ctx.fill();}
+    ctx.restore();};
+  g.truck=(x,y,a,col)=>{ctx.save();ctx.translate(x,y);ctx.rotate(a||0);
+    g.box(-70,-13,52,26,"#DCE3DD",4); g.box(22,-14,32,28,col,5);
+    g.box(-16,-9,34,18,"#B9C2BA",3); g.box(34,-10,12,20,"rgba(0,0,0,.32)",3);
+    ctx.restore();};
+  g.bike=(x,y,a,col)=>{ctx.save();ctx.translate(x,y);ctx.rotate(a||0);
+    g.ring(-9,0,7,col||C.good,2.5); g.ring(9,0,7,col||C.good,2.5);
+    g.line(-9,0,2,-6,col||C.good,2.5); g.line(9,0,2,-6,col||C.good,2.5);
+    g.dot(2,-11,4,col||C.good); ctx.restore();};
+  g.bus=(x,y,a,o={})=>{ctx.save();ctx.translate(x,y);ctx.rotate(a||0);
+    g.box(-62,-15,124,30,"#F2C230",5); g.box(-52,-10,30,20,"rgba(0,0,0,.22)",3);
+    g.box(40,-10,14,20,"rgba(0,0,0,.28)",3);
+    const on=o.flash;
+    g.dot(-56,-19,5,on?"#FF4632":"#6B2F28"); g.dot(56,-19,5,on?"#FF4632":"#6B2F28");
+    g.dot(-56,19,5,on?"#FF4632":"#6B2F28"); g.dot(56,19,5,on?"#FF4632":"#6B2F28");
+    ctx.restore();};
+  g.ped=(x,y,s=1,col)=>{ctx.save();ctx.translate(x,y);ctx.scale(s,s);
+    g.dot(0,-16,6,col||C.white); g.line(0,-10,0,4,col||C.white,5);
+    g.line(0,-6,-8,2,col||C.white,4); g.line(0,-6,8,1,col||C.white,4);
+    g.line(0,4,-7,18,col||C.white,4.5); g.line(0,4,7,18,col||C.white,4.5); ctx.restore();};
+  g.pill=(x,y,t,c,o={})=>{ctx.save();
+    const fs=o.s||14;ctx.font=`700 ${fs}px -apple-system,system-ui,Arial,sans-serif`;
+    const w=ctx.measureText(t).width+22,h=fs+15;
+    g.box(x-w/2,y-h/2,w,h,c,h/2);
+    g.txt(t,x,y+.5,{s:fs,c:o.tc||"#0B120F",a:"center",w:700});ctx.restore();return w;};
+  g.title=(t,sub)=>{g.txt(t,34,42,{s:26,w:800,c:C.ink});
+    if(sub)g.txt(sub,34,72,{s:15,w:500,c:C.dim});};
+  g.signpost=(x,y,shape,fillc,label,o={})=>{ctx.save();ctx.translate(x,y);
+    const r=o.r||34;ctx.fillStyle=fillc;ctx.beginPath();
+    if(shape==="oct"){for(let i=0;i<8;i++){const a=Math.PI/8+i*Math.PI/4;
+      const px=Math.cos(a)*r,py=Math.sin(a)*r;i?ctx.lineTo(px,py):ctx.moveTo(px,py);}}
+    else if(shape==="tri"){ctx.moveTo(-r,-r*.8);ctx.lineTo(r,-r*.8);ctx.lineTo(0,r*.9);}
+    else if(shape==="dia"){ctx.moveTo(0,-r);ctx.lineTo(r,0);ctx.lineTo(0,r);ctx.lineTo(-r,0);}
+    else if(shape==="pen"){ctx.moveTo(0,-r);ctx.lineTo(r,-r*.28);ctx.lineTo(r*.62,r*.85);
+      ctx.lineTo(-r*.62,r*.85);ctx.lineTo(-r,-r*.28);}
+    else if(shape==="pnt"){ctx.moveTo(-r,-r*.72);ctx.lineTo(r,0);ctx.lineTo(-r,r*.72);}
+    else if(shape==="cir"){ctx.arc(0,0,r,0,7);}
+    else {ctx.roundRect(-r*.78,-r,r*1.56,r*2,4);}
+    ctx.closePath();ctx.fill();
+    if(o.border){ctx.strokeStyle=o.border;ctx.lineWidth=3;ctx.stroke();}
+    if(label)g.txt(label,0,o.ly||0,{s:o.ls||13,c:o.lc||"#111",a:"center",w:800});
+    ctx.restore();};
+  return g;
+}
+/* fit a canvas to its CSS box at device resolution, logical coords stay 800x450 */
+function fitCanvas(cv){
+  const r=cv.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
+  const w=Math.max(1,Math.round(r.width*dpr));
+  if(cv.width!==w){cv.width=w;cv.height=Math.round(w*LH/LW);}
+  const ctx=cv.getContext("2d");
+  ctx.setTransform(cv.width/LW,0,0,cv.width/LW,0,0);
+  return ctx;
+}
+
+/* ================= data prep ================= */
+const ALL = QB.map((r,i)=>({id:"q"+i, cat:r[0], q:r[1], opts:r[2], c:r[3], why:r[4]}))
+  .concat(SIGNS.map(s=>({id:"s_"+s.id, cat:"signs", sign:s.id,
+    q:"What does this sign mean?", opts:s.opts, c:s.c, why:s.why})));
+const byId = Object.fromEntries(ALL.map(q=>[q.id,q]));
+const inCat = c => ALL.filter(q=>q.cat===c);
+const PASS = 0.8, EXAM_N = 30;
+
+/* ================= animated lessons ================= */
+const LESSONS=[
+{id:"l-signs", cat:"signs", name:"Signs, Signals & Markings",
+ blurb:"Read a sign by its shape and color before you read a single word.",
+ scenes:[
+  {t:"Shape tells you the rule", dur:11,
+   say:["Before you read a single word, the shape has already told you what kind of sign this is.",
+        "An octagon is only ever a stop sign. A downward triangle is only ever yield.",
+        "A diamond warns you. A pentagon means school. A pennant marks a no-passing zone, and a circle warns of a railroad crossing."],
+   draw(g,p){g.clear();g.title("Shape tells you the rule","Six shapes you should know on sight");
+    const it=[["oct","#C8102E","STOP","Stop"],["tri","#C8102E","","Yield"],["dia","#F6C244","","Warning"],
+              ["pen","#C8E600","","School"],["pnt","#F6C244","","No passing"],["cir","#F6C244","RXR","Railroad"]];
+    it.forEach((s,i)=>{const a=seg(p,i*.1,i*.1+.24);if(!a)return;
+      const x=140+(i%3)*260,y=195+((i/3)|0)*140,k=.65+ease(a)*.35;
+      g.ctx.save();g.ctx.globalAlpha=a;g.ctx.translate(x,y);g.ctx.scale(k,k);
+      g.signpost(0,0,s[0],s[1],s[2],{r:42,ls:15});
+      g.txt(s[3],0,64,{s:15,a:"center",w:700});g.ctx.restore();});}},
+  {t:"Color carries meaning", dur:11,
+   say:["Color is the second signal, and it works from much further away than any text.",
+        "Red forbids. Yellow warns. Orange means people are working on the road.",
+        "Green guides you, blue points to services, brown points to parks, and a white rectangle is always a law you must obey."],
+   draw(g,p){g.clear();g.title("Color carries meaning","Seven colors, seven jobs");
+    const rows=[["#C8102E","Red","Stop, or something is prohibited"],["#F6C244","Yellow","General warning"],
+      ["#F26522","Orange","Work zone \u2014 fines are doubled"],["#00693E","Green","Directions and distances"],
+      ["#0057B8","Blue","Motorist services"],["#6B4B2A","Brown","Parks and recreation"],
+      ["#EAF0EB","White","A regulation you must obey"]];
+    rows.forEach((r,i)=>{const a=seg(p,i*.1,i*.1+.2);if(!a)return;const y=118+i*44;
+      g.box(40,y-15,lerp(0,140,ease(a)),30,r[0],5);
+      const b=seg(a,.55,1);if(b){g.txt(r[1],196,y,{s:16,w:800,alpha:b});
+        g.txt(r[2],286,y,{s:14.5,w:500,c:C.dim,alpha:b});}});}},
+  {t:"Reading the signal", dur:13,
+   say:["Green, yellow, red you already know. Yellow means stop if you can do it safely, not speed up.",
+        "A flashing red is not a suggestion. Treat it exactly like a stop sign: full stop, then go when clear.",
+        "A flashing yellow means slow down and look, but you do not have to stop.",
+        "And if the signal is completely dark in a power cut, Arizona says treat the intersection as a four-way stop."],
+   draw(g,p){g.clear();
+    const st=[["g","Green \u2014 go, if the intersection is clear"],["y","Yellow \u2014 stop if you safely can"],
+      ["r","Red \u2014 stop behind the line"],["fr","Flashing red \u2014 treat it as a stop sign"],
+      ["fy","Flashing yellow \u2014 slow down and proceed with care"],["d","Dark signal \u2014 treat it as a four-way stop"]];
+    const i=Math.min(st.length-1,(p*st.length)|0),k=st[i][0],loc=p*st.length-i,bl=(loc*6%1)<.5;
+    const off="rgba(255,255,255,.06)";let R=off,Y=off,G=off;
+    if(k==="g")G="#3FD98A";else if(k==="y")Y="#FFC533";else if(k==="r")R="#FF4632";
+    else if(k==="fr")R=bl?"#FF4632":off;else if(k==="fy")Y=bl?"#FFC533":off;
+    g.box(338,96,124,244,"#0C1211",16);g.stroke(338,96,124,244,"rgba(255,255,255,.12)",2,16);
+    g.dot(400,142,30,R);g.dot(400,218,30,Y);g.dot(400,294,30,G);
+    g.txt(st[i][1],400,392,{s:17.5,a:"center",w:600});}},
+  {t:"Lines on the pavement", dur:13,
+   say:["Yellow lines separate traffic going opposite directions. White lines separate lanes going the same way.",
+        "Always read the line closest to you. Broken on your side means you may pass when it is clear.",
+        "Solid on your side means you stay put, even if the other side is broken.",
+        "Double solid yellow means nobody passes in either direction."],
+   draw(g,p){g.clear();g.title("Lines on the pavement","Yellow splits directions \u00b7 white splits lanes");
+    const rows=[["Broken yellow","Pass when it is clear",C.line,[18,15]],
+      ["Solid yellow your side","You may not pass",C.line,null],
+      ["Double solid yellow","Nobody passes",C.line,"dbl"],
+      ["Broken white","Lane change allowed",C.white,[18,15]],
+      ["Solid white","Stay in your lane",C.white,null]];
+    rows.forEach((r,i)=>{const a=seg(p,i*.12,i*.12+.26);if(!a)return;const y=132+i*64;
+      g.box(40,y-21,720,42,C.road,4);const x2=lerp(40,760,ease(a));
+      if(r[3]==="dbl"){g.line(40,y-4,x2,y-4,r[2],3);g.line(40,y+4,x2,y+4,r[2],3);}
+      else g.line(40,y,x2,y,r[2],3,r[3]);
+      const b=seg(a,.5,1);if(b){g.txt(r[0],44,y-32,{s:13.5,w:700,alpha:b});
+        g.txt(r[1],756,y-32,{s:13,w:500,c:C.dim,a:"right",alpha:b});}});}}
+]},
+
+{id:"l-row", cat:"row", name:"Right-of-Way",
+ blurb:"Who goes first at stops, turns, roundabouts and school buses.",
+ scenes:[
+  {t:"Four-way stop", dur:13,
+   say:["Two cars reach a four-way stop at the same moment. Neither one automatically wins.",
+        "The rule is simple: yield to the driver on your right.",
+        "The blue car's right side faces the green car, so blue waits and green goes first.",
+        "Once green is clear, blue proceeds. Right-of-way is something you give, never something you take."],
+   draw(g,p){g.clear();g.hroad(232,132);g.vroad(400,132);
+    g.line(0,232,328,232,C.line,3,[18,14]);g.line(472,232,800,232,C.line,3,[18,14]);
+    g.line(400,0,400,160,C.line,3,[18,14]);g.line(400,304,400,450,C.line,3,[18,14]);
+    g.box(404,300,58,5,C.white);g.box(474,166,5,58,C.white);
+    const ap=ease(seg(p,0,.28));let ay=lerp(440,340,ap),bx=lerp(790,512,ap);
+    const bg=ease(seg(p,.48,.74)),ag=ease(seg(p,.76,1));
+    if(bg)bx=lerp(512,20,bg); if(ag)ay=lerp(340,-40,ag);
+    g.car(434,ay,-Math.PI/2,C.blue,{brake:p>=.28&&p<.76});
+    g.car(bx,198,Math.PI,C.good,{brake:p>=.28&&p<.48});
+    if(p>=.3&&p<.48)g.pill(400,58,"Arrived at the same moment",C.warn);
+    else if(p>=.48&&p<.76){g.pill(400,58,"The driver on the right goes first",C.good);
+      g.arrow(596,104,506,142,C.good,4);}
+    else if(p>=.76)g.pill(400,58,"Now blue may go",C.blue,{tc:"#04121C"});}},
+  {t:"Turning left on a green light", dur:13,
+   say:["A plain green light lets you enter the intersection. It does not protect your left turn.",
+        "You must yield to every oncoming vehicle and to any pedestrian in the crosswalk.",
+        "So you wait, with your wheels straight, until there is a real gap.",
+        "Only a green arrow makes the turn protected, because oncoming traffic is being held by a red."],
+   draw(g,p){g.clear();g.hroad(268,150);g.box(462,0,116,196,C.road);
+    g.line(0,268,455,268,C.line,3,[20,16]);g.line(585,268,800,268,C.line,3,[20,16]);
+    const ap=ease(seg(p,0,.2));let cx=lerp(50,468,ap),cy=308,ca=0;
+    if(p<.74)[0,1,2].forEach(i=>{const ox=790-(((p*1.45+i*.34)%1)*880);g.car(ox,228,Math.PI,"#C9713F");});
+    const tn=ease(seg(p,.74,1));
+    if(tn){cx=lerp(468,520,Math.sin(tn*Math.PI/2));cy=lerp(308,-40,tn);ca=lerp(0,-Math.PI/2,tn);}
+    g.car(cx,cy,ca,C.blue,{brake:p>=.2&&p<.74});
+    if(p<.2)g.pill(400,52,"Green light, no arrow",C.warn);
+    else if(p<.74)g.pill(400,52,"Yield to oncoming traffic \u2014 wait for a gap",C.warn);
+    else g.pill(400,52,"Gap is clear \u2014 now you may turn",C.good);}},
+  {t:"Roundabouts", dur:12,
+   say:["Traffic inside an Arizona roundabout flows counterclockwise, and it has the right-of-way.",
+        "You yield at the entry, wait for a gap, then merge in. You do not stop once you are inside.",
+        "Signal right as you leave, and never change lanes inside the circle."],
+   draw(g,p){g.clear();const cx=400,cy=238,R=118;
+    g.box(0,208,cx-R-38,62,C.road);g.box(cx+R+38,208,800,62,C.road);
+    g.box(369,0,62,cy-R-38,C.road);g.box(369,cy+R+38,62,450,C.road);
+    g.ring(cx,cy,R,C.road,84);g.dot(cx,cy,R-44,"#26302B");g.ring(cx,cy,R-44,C.curb,3);
+    const a1=1.4-p*3.4,x1=cx+Math.cos(a1)*R,y1=cy+Math.sin(a1)*R;
+    g.car(x1,y1,a1-Math.PI/2,"#C9713F");
+    const wait=p<.55,ent=ease(seg(p,.55,1));
+    let mx=lerp(40,cx-R-52,ease(seg(p,0,.3))),my=239,ma=0;
+    if(ent){const aa=lerp(Math.PI,Math.PI*.34,ent);mx=cx+Math.cos(aa)*R;my=cy+Math.sin(aa)*R;ma=aa-Math.PI/2;}
+    g.car(mx,my,ma,C.blue,{brake:wait&&p>.3});
+    g.pill(400,42,wait?"Yield to traffic already in the circle":"Gap found \u2014 merge and keep moving",
+      wait?C.warn:C.good);}},
+  {t:"Stopping for a school bus", dur:14,
+   say:["When a school bus turns on its flashing red lights, traffic stops in both directions.",
+        "You stay stopped until the lights stop flashing and the bus starts moving again.",
+        "There is one exception, and it is narrow. On a divided highway with a physical median or barrier, only traffic behind the bus must stop.",
+        "A painted center line is not a divider. If all that separates you is paint, you must stop."],
+   draw(g,p){g.clear();const div=p>=.52;
+    g.hroad(240,196);
+    if(div){g.box(0,228,800,26,"#2A332E");g.box(0,228,800,4,C.curb);g.box(0,250,800,4,C.curb);}
+    else g.line(0,240,800,240,C.line,3,[20,16]);
+    const fl=(p*7%1)<.5;
+    g.ctx.save();g.ctx.translate(300,300);g.ctx.scale(.82,.82);g.bus(0,0,0,{flash:fl});g.ctx.restore();
+    const beh=Math.min(1,seg(p,0,.3));
+    g.car(lerp(30,150,ease(beh)),300,0,C.blue,{brake:true});
+    const onc=div?(1-((p-.52)/.48))*840-20:lerp(790,560,ease(seg(p,0,.3)));
+    g.car(div?onc:560,182,Math.PI,C.good,{brake:!div});
+    g.pill(400,44,div?"Divided by a median \u2014 oncoming traffic may continue"
+      :"Undivided \u2014 both directions must stop",div?C.blue:C.bad,{tc:div?"#04121C":"#fff"});
+    g.txt(div?"A raised median or barrier is the only exception":"A painted line is NOT a divider",
+      400,412,{s:15,a:"center",c:C.dim,w:600});}}
+]},
+
+{id:"l-speed", cat:"speed", name:"Speed, Lanes & Space",
+ blurb:"Arizona's limits, the two-second rule, and how far you really need to stop.",
+ scenes:[
+  {t:"Arizona speed limits", dur:12,
+   say:["Four numbers cover most of the test. Fifteen in a school zone when the crossing is in operation.",
+        "Twenty-five in a business or residential district when nothing is posted.",
+        "Sixty-five is the general highway maximum, and rural interstates go up to seventy-five where posted.",
+        "But the basic speed law overrides all of them: never drive faster than is reasonable for the conditions."],
+   draw(g,p){g.clear();g.title("The four numbers","Plus the rule that overrides them all");
+    const s=[["15","School zone, crossing active"],["25","Business or residential"],
+      ["65","General highway maximum"],["75","Rural interstate, where posted"]];
+    s.forEach((v,i)=>{const a=seg(p,i*.13,i*.13+.28);if(!a)return;const x=140+i*175,y=210;
+      g.ctx.save();g.ctx.globalAlpha=a;const k=.7+ease(a)*.3;g.ctx.translate(x,y);g.ctx.scale(k,k);
+      g.box(-46,-66,92,132,"#FFFFFF",5);g.stroke(-46,-66,92,132,"#111",4,5);
+      g.txt("SPEED",0,-42,{s:13,a:"center",c:"#111",w:800});
+      g.txt("LIMIT",0,-24,{s:13,a:"center",c:"#111",w:800});
+      g.txt(v[0],0,24,{s:46,a:"center",c:"#111",w:800});g.ctx.restore();
+      g.txt(v[1],x,300,{s:13,a:"center",c:C.dim,w:600,alpha:a});});
+    const b=seg(p,.7,1);if(b)g.txt("Basic speed law: even at the posted limit, unsafe is illegal",
+      400,368,{s:17,a:"center",w:700,c:C.warn,alpha:b});}},
+  {t:"The two-second rule", dur:13,
+   say:["Following distance is measured in time, not car lengths, because time scales with your speed.",
+        "Pick a fixed object ahead. When the car in front passes it, start counting.",
+        "If you reach that object before two seconds are up, you are following too closely.",
+        "Two seconds is the minimum in good conditions. Make it three or four in rain, dust, at night, or behind a motorcycle."],
+   draw(g,p){g.clear();g.hroad(250,120);g.line(0,250,800,250,C.line,3,[20,16]);
+    g.box(548,190,6,120,C.white);g.txt("fixed point",551,172,{s:12,a:"center",c:C.dim,w:600});
+    const lead=((p*1.15)%1)*940-70;const gap=210;
+    g.car(lead,290,0,"#C9713F");g.car(lead-gap,290,0,C.blue);
+    const passed=lead>551, cnt=passed?Math.min(2,((lead-551)/gap*2)):0;
+    if(passed)g.txt(cnt>=2?"two seconds":(cnt>=1?"one thousand two":"one thousand one"),
+      400,360,{s:20,a:"center",w:800,c:cnt>=2?C.good:C.warn});
+    g.arrow(lead-gap+30,332,lead-30,332,C.dim,2.5);
+    g.txt("2 seconds minimum",lead-gap/2,352,{s:13,a:"center",c:C.dim,w:600});
+    g.pill(400,44,"Count the gap in time, not car lengths",C.warn);}},
+  {t:"How far you really need to stop", dur:13,
+   say:["Stopping distance is not one number. It is perception, then reaction, then braking.",
+        "You travel a long way before the brakes even engage, and that part grows straight with speed.",
+        "But braking distance grows with the square of your speed. Double your speed and you roughly quadruple it.",
+        "That is why a small increase in speed makes such a large difference in whether you stop in time."],
+   draw(g,p){g.clear();g.title("Stopping distance","Reaction grows with speed \u2014 braking grows with speed squared");
+    const rows=[[25,"25 mph",62,32],[45,"45 mph",112,105],[65,"65 mph",162,220]];
+    rows.forEach((r,i)=>{const a=ease(seg(p,.05+i*.2,.05+i*.2+.42));const y=170+i*78;
+      g.txt(r[1],38,y,{s:16,w:800});
+      const sx=120,sc=1.9;
+      g.box(sx,y-15,lerp(0,r[2]/sc*1.6,a),30,C.blue,3);
+      g.box(sx+r[2]/sc*1.6,y-15,lerp(0,r[3]/sc*1.6,clamp01(a*1.6-.6)),30,C.bad,3);
+      if(a>.9)g.txt((r[2]+r[3])+" ft",sx+(r[2]+r[3])/sc*1.6+12,y,{s:14,c:C.dim,w:700,mono:true});});
+    g.box(120,392,16,16,C.blue,3);g.txt("perception + reaction",144,400,{s:13.5,c:C.dim,w:600});
+    g.box(310,392,16,16,C.bad,3);g.txt("braking",334,400,{s:13.5,c:C.dim,w:600});}},
+  {t:"Passing and lane discipline", dur:12,
+   say:["On a multi-lane road, keep right except to pass. The left lane is for passing, not for cruising.",
+        "Before you move, signal for at least a hundred feet, check your mirrors, then turn your head and check the blind spot.",
+        "Return to your lane only when you can see the whole car you passed in your rearview mirror.",
+        "Never pass on a hill or curve, or within a hundred feet of an intersection, railroad crossing, bridge or tunnel."],
+   draw(g,p){g.clear();g.hroad(240,180);
+    g.line(0,240,800,240,C.white,3,[22,18]);
+    g.box(0,148,800,4,C.shoulder);g.box(0,328,800,4,C.shoulder);
+    const slow=140+p*90;g.car(slow,288,0,"#C9713F");
+    const ph=p;let mx,my;
+    if(ph<.22){mx=lerp(20,slow-130,ease(seg(ph,0,.22)));my=288;}
+    else if(ph<.38){const k=ease(seg(ph,.22,.38));mx=lerp(slow-130,slow-60,k);my=lerp(288,196,k);}
+    else if(ph<.72){const k=ease(seg(ph,.38,.72));mx=lerp(slow-60,slow+190,k);my=196;}
+    else{const k=ease(seg(ph,.72,1));mx=lerp(slow+190,slow+300,k);my=lerp(196,288,k);}
+    g.car(mx,my,0,C.blue);
+    const msg=ph<.22?"Keep right until you are ready to pass":ph<.38?"Signal, mirrors, then check the blind spot"
+      :ph<.72?"Complete the pass without lingering":"Return only when you see the whole car in your mirror";
+    g.pill(400,44,msg,ph<.72?C.warn:C.good);}}
+]},
+
+{id:"l-share", cat:"share", name:"Sharing the Road",
+ blurb:"Bicycles, motorcycles, trucks and pedestrians all change how you drive.",
+ scenes:[
+  {t:"Three feet for bicycles", dur:11,
+   say:["Arizona law requires at least three feet of clearance when you overtake a bicycle.",
+        "A bicycle is legally a vehicle, with the same rights and duties as you have.",
+        "If the lane is too narrow to give three feet, you wait. Squeezing past is both illegal and how riders get killed."],
+   draw(g,p){g.clear();g.hroad(250,150);g.line(0,178,800,178,C.white,3,[20,16]);
+    g.bike(150+p*520,306,0,C.good);
+    const bad=p<.5;const cx=lerp(-60,860,p);
+    g.car(cx,bad?268:224,0,bad?C.bad:C.blue);
+    const bx=150+p*520;
+    if(Math.abs(cx-bx)<220){const gap=bad?26:64;
+      g.line(bx,306-14,bx,306-14-gap,bad?C.bad:C.good,2.5,[6,5]);
+      g.txt(bad?"too close":"3 ft",bx+34,306-14-gap/2,{s:13,w:800,c:bad?C.bad:C.good});}
+    g.pill(400,44,bad?"Passing this close is illegal":"At least three feet \u2014 every time",bad?C.bad:C.good,
+      {tc:bad?"#fff":"#08150F"});}},
+  {t:"Truck blind spots", dur:12,
+   say:["Large trucks have blind spots on all four sides, and they are much bigger than you expect.",
+        "The worst are directly behind the trailer and along the right side, where a whole car can vanish.",
+        "The rule of thumb: if you cannot see the driver's mirrors, the driver cannot see you.",
+        "A truck also needs far more distance to stop, so never cut back in front of one too early."],
+   draw(g,p){g.clear();g.hroad(240,170);g.line(0,240,800,240,C.white,3,[22,18]);
+    const a=ease(seg(p,.1,.5));g.ctx.save();g.ctx.globalAlpha=a*.32;
+    g.box(190,150,190,180,C.bad,6);g.box(430,258,250,74,C.bad,6);
+    g.box(430,150,150,74,C.bad,6);g.box(680,182,110,116,C.bad,6);g.ctx.restore();
+    g.ctx.save();g.ctx.translate(500,240);g.ctx.scale(.92,.92);g.truck(0,0,0,C.blue);g.ctx.restore();
+    if(a>.5){g.txt("NO-ZONE",285,240,{s:15,a:"center",w:800,c:C.bad,alpha:a});
+      g.txt("NO-ZONE",555,296,{s:14,a:"center",w:800,c:C.bad,alpha:a});
+      g.txt("NO-ZONE",735,240,{s:14,a:"center",w:800,c:C.bad,alpha:a});}
+    const cx=lerp(80,300,ease(seg(p,.55,1)));if(p>.55)g.car(cx,296,0,"#C9713F");
+    g.pill(400,42,"If you cannot see the mirrors, they cannot see you",C.warn);}},
+  {t:"Motorcycles get a full lane", dur:11,
+   say:["A motorcycle is entitled to the entire lane. Sharing one with a rider is illegal.",
+        "Riders move around inside their lane to dodge gravel, oil and potholes, and to stay visible. That is skill, not indecision.",
+        "Give them three to four seconds of following distance, because a bike can stop faster than your car can."],
+   draw(g,p){g.clear();g.hroad(240,160);g.line(0,240,800,240,C.white,3,[22,18]);
+    g.box(0,160,800,3,C.shoulder);g.box(0,317,800,3,C.shoulder);
+    const wob=Math.sin(p*Math.PI*3)*22;
+    g.ctx.save();g.ctx.translate(430,290+wob);g.ctx.scale(.9,.9);g.bike(0,0,0,C.warn);g.ctx.restore();
+    g.line(0,320,800,320,"rgba(246,194,68,.25)",1.5,[8,8]);
+    g.car(lerp(20,220,ease(seg(p,0,.6))),290,0,C.blue);
+    g.arrow(250,352,410,352,C.dim,2.5);g.txt("3\u20134 seconds",330,372,{s:13,a:"center",c:C.dim,w:700});
+    g.pill(400,42,"Never share a lane with a motorcycle",C.warn);}},
+  {t:"Pedestrians and crosswalks", dur:11,
+   say:["Every intersection has a crosswalk, whether or not anyone painted one. Pedestrians in it have the right-of-way.",
+        "A pedestrian with a white cane or a guide dog gets right-of-way anywhere they are crossing. You stop.",
+        "And even when a pedestrian is clearly in the wrong, avoiding the collision is still your job."],
+   draw(g,p){g.clear();g.hroad(250,170);
+    for(let i=0;i<7;i++)g.box(430,172+i*22,44,13,C.white,2);
+    g.line(0,250,410,250,C.line,3,[20,16]);g.line(490,250,800,250,C.line,3,[20,16]);
+    const py=lerp(360,150,ease(seg(p,.2,1)));g.ped(452,py,1,C.white);
+    const cx=lerp(30,330,ease(seg(p,0,.35)));g.car(cx,306,0,C.blue,{brake:p>.3});
+    g.box(352,236,5,120,C.white);
+    g.pill(400,44,p<.3?"Scan the crosswalk before you reach it":"Stop and let them finish crossing",
+      p<.3?C.warn:C.good);}}
+]},
+{id:"l-law", cat:"law", name:"Alcohol, Drugs & the Law",
+ blurb:"BAC thresholds, implied consent, points, and what they cost you.",
+ scenes:[
+  {t:"The BAC numbers", dur:13,
+   say:["Four blood alcohol numbers matter in Arizona, and they are worth memorizing exactly.",
+        "Zero for anyone under twenty-one. Arizona has zero tolerance, so any measurable alcohol is a violation.",
+        "Point-oh-four for commercial drivers, and point-oh-eight for a driver twenty-one or older.",
+        "At point-one-five it becomes Extreme DUI, with mandatory jail time."],
+   draw(g,p){g.clear();g.title("Blood alcohol thresholds","Arizona");
+    const bar={x:70,y:250,w:660,h:26};
+    g.box(bar.x,bar.y,bar.w,bar.h,"#232C28",13);
+    g.box(bar.x,bar.y,lerp(0,bar.w,ease(seg(p,.05,.9))),bar.h,C.bad,13);
+    const marks=[[0,"0.00","Under 21 \u2014 any alcohol"],[.27,"0.04","Commercial driver"],
+      [.53,"0.08","Driver 21 or older"],[1,"0.15","Extreme DUI"]];
+    marks.forEach((m,i)=>{const a=seg(p,.1+i*.19,.1+i*.19+.3);if(!a)return;
+      const x=bar.x+bar.w*m[0]*.94+8;
+      g.line(x,bar.y-14,x,bar.y+bar.h+14,C.white,2.5);
+      g.txt(m[1],x,bar.y-34,{s:19,a:"center",w:800,mono:true,alpha:a});
+      g.ctx.save();g.ctx.translate(x,bar.y+bar.h+30);g.ctx.rotate(.34);
+      g.txt(m[2],0,0,{s:13,c:C.dim,w:600,alpha:a});g.ctx.restore();});
+    const b=seg(p,.78,1);if(b)g.txt("Arizona can also charge you below 0.08 if you are impaired to the slightest degree",
+      400,410,{s:15,a:"center",c:C.warn,w:700,alpha:b});}},
+  {t:"Implied consent", dur:11,
+   say:["By driving on an Arizona road, you have already consented to a chemical test if you are lawfully arrested for DUI.",
+        "Refusing is not a way out. A first refusal costs you your license for twelve months.",
+        "A second refusal within eighty-four months costs you two years.",
+        "And the only thing that lowers your blood alcohol is time. Not coffee, not a cold shower, not food."],
+   draw(g,p){g.clear();g.title("Implied consent","Refusing has its own penalty");
+    const steps=[["You drive in Arizona","Consent is automatic"],["Lawful DUI arrest","A test is requested"],
+      ["You refuse","No test is taken"],["12-month suspension","24 months on a second refusal"]];
+    steps.forEach((s,i)=>{const a=seg(p,i*.17,i*.17+.3);if(!a)return;const y=140+i*72;
+      g.ctx.save();g.ctx.globalAlpha=a;
+      g.box(70,y-27,660,54,i===3?"#3A211E":"#1E2724",10);
+      if(i===3)g.stroke(70,y-27,660,54,C.bad,2,10);
+      g.dot(108,y,13,i===3?C.bad:C.dim);
+      g.txt(String(i+1),108,y+.5,{s:13,a:"center",c:"#0B120F",w:800});
+      g.txt(s[0],140,y-8,{s:16.5,w:800,c:i===3?C.bad:C.ink});
+      g.txt(s[1],140,y+13,{s:13.5,w:500,c:C.dim});g.ctx.restore();});}},
+  {t:"Points and what they cost", dur:11,
+   say:["Arizona puts points on your record for moving violations, and they add up faster than people expect.",
+        "Eight or more points inside twelve months means a suspended license or mandatory Traffic Survival School.",
+        "A single DUI is eight points on its own. That is the whole threshold in one offense.",
+        "Also worth memorizing: the minimum insurance is twenty-five, fifty, fifteen thousand."],
+   draw(g,p){g.clear();g.title("The point system","8 points in 12 months triggers action");
+    const cells=8,fill=Math.floor(ease(seg(p,.05,.7))*cells+.001);
+    for(let i=0;i<cells;i++){const x=104+i*76,on=i<fill;
+      g.box(x,150,60,60,on?(fill>=8?C.bad:C.warn):"#1E2724",8);
+      if(on)g.txt("!",x+30,181,{s:26,a:"center",c:"#0B120F",w:800});}
+    g.txt("8 points",400,246,{s:15,a:"center",c:C.dim,w:700});
+    const b=seg(p,.72,1);
+    if(b){g.txt("Suspension, or Traffic Survival School",400,296,{s:20,a:"center",w:800,c:C.bad,alpha:b});
+      g.txt("One DUI = 8 points by itself",400,330,{s:15,a:"center",c:C.dim,w:600,alpha:b});}
+    const c=seg(p,.85,1);
+    if(c)g.txt("Minimum insurance: $25,000 / $50,000 / $15,000",400,392,
+      {s:16,a:"center",w:700,c:C.warn,alpha:c,mono:false});}}
+]},
+
+{id:"l-az", cat:"az", name:"Arizona Rules & Licensing",
+ blurb:"Permit to Class G, the restrictions, and the state-specific rules.",
+ scenes:[
+  {t:"Permit to licence", dur:13,
+   say:["You can apply for an instruction permit at fifteen years and six months, after the written and vision tests.",
+        "On a permit you must have a licensed driver at least twenty-one years old in the front passenger seat.",
+        "You must hold the permit at least six months and log thirty hours of supervised driving, ten of them at night.",
+        "Then at sixteen you can take the road test for a Class G graduated licence."],
+   draw(g,p){g.clear();g.title("The road to a licence","Four milestones");
+    g.box(80,238,640,5,"#232C28");
+    g.box(80,238,lerp(0,640,ease(seg(p,.05,.9))),5,C.good);
+    const ms=[["15\u00bd","Instruction permit"],["21+","Supervising driver"],["6 mo","+ 30 hrs practice"],["16","Class G licence"]];
+    ms.forEach((m,i)=>{const a=seg(p,i*.2,i*.2+.32);if(!a)return;const x=80+i*213;
+      g.ctx.save();g.ctx.globalAlpha=a;
+      g.dot(x,240,lerp(6,17,ease(a)),i===3?C.good:C.warn);
+      g.txt(m[0],x,196,{s:22,a:"center",w:800,mono:true});
+      g.txt(m[1],x,290,{s:14,a:"center",c:C.dim,w:600});g.ctx.restore();});
+    const b=seg(p,.8,1);
+    if(b)g.txt("10 of those 30 practice hours must be after dark",400,368,
+      {s:16,a:"center",c:C.warn,w:700,alpha:b});}},
+  {t:"Class G restrictions", dur:12,
+   say:["For the first six months with a Class G licence, two restrictions apply.",
+        "You may not carry more than one passenger under eighteen, unless they are immediate family.",
+        "And you may not drive between midnight and five in the morning.",
+        "The curfew has exceptions: travel to or from work or school, a family emergency, or driving with a parent or guardian over twenty-one."],
+   draw(g,p){g.clear();g.title("First six months on a Class G","Two rules");
+    const a=seg(p,.05,.4);
+    if(a){g.ctx.save();g.ctx.globalAlpha=a;
+      g.box(58,120,330,150,"#1E2724",12);g.txt("Passengers",78,152,{s:15,w:800,c:C.warn});
+      for(let i=0;i<3;i++){const ok=i===0;g.ped(120+i*68,215,.8,ok?C.good:C.bad);
+        if(!ok){g.line(120+i*68-20,190,120+i*68+20,238,C.bad,3);}}
+      g.txt("Max one passenger under 18 (family exempt)",78,258,{s:12.5,c:C.dim,w:600});g.ctx.restore();}
+    const b=seg(p,.4,.75);
+    if(b){g.ctx.save();g.ctx.globalAlpha=b;
+      g.box(412,120,330,150,"#1E2724",12);g.txt("Curfew",432,152,{s:15,w:800,c:C.warn});
+      g.ring(500,205,38,"#2C3733",9);
+      g.ctx.save();g.ctx.beginPath();g.ctx.moveTo(500,205);
+      g.ctx.arc(500,205,38,-Math.PI/2,-Math.PI/2+Math.PI*.42);g.ctx.closePath();
+      g.ctx.fillStyle=C.bad;g.ctx.fill();g.ctx.restore();
+      g.txt("12am \u2013 5am",576,198,{s:17,w:800,c:C.bad});
+      g.txt("no driving",576,220,{s:13,c:C.dim,w:600});g.ctx.restore();}
+    const c=seg(p,.75,1);
+    if(c)g.txt("Exceptions: work, school, family emergency, or a parent 21+ riding along",
+      400,330,{s:15,a:"center",c:C.dim,w:600,alpha:c});}},
+  {t:"Lights, turns and paperwork", dur:13,
+   say:["Headlights go on from sunset to sunrise, and any time visibility drops below five hundred feet.",
+        "Dim your high beams within five hundred feet of an oncoming car, and within two hundred feet when you are following one.",
+        "Right on red is legal after a complete stop, unless a sign forbids it. Left on red is legal only from a one-way onto a one-way.",
+        "And you must tell the MVD about an address change within ten days."],
+   draw(g,p){g.clear();g.title("Numbers to memorize","Distances, and one deadline");
+    const rows=[["500 ft","Headlights on when visibility drops below this"],
+      ["500 ft","Dim high beams for oncoming traffic"],
+      ["200 ft","Dim high beams when following"],
+      ["100 ft","Signal before a turn or lane change"],
+      ["10 days","To report an address change to MVD"]];
+    rows.forEach((r,i)=>{const a=seg(p,i*.14,i*.14+.3);if(!a)return;const y=136+i*58;
+      g.ctx.save();g.ctx.globalAlpha=a;
+      g.box(64,y-22,672,44,"#1E2724",9);
+      g.txt(r[0],92,y,{s:19,w:800,c:C.warn,mono:true});
+      g.txt(r[1],212,y,{s:15,w:500,c:C.ink});g.ctx.restore();});
+    const b=seg(p,.82,1);
+    if(b)g.txt("Right on red: stop completely first, unless a sign forbids it",
+      400,424,{s:15,a:"center",c:C.dim,w:600,alpha:b});}}
+]},
+
+{id:"l-emerg", cat:"emerg", name:"Emergencies & Arizona Weather",
+ blurb:"Dust storms, flooded washes, skids and blowouts \u2014 the scenes that actually kill people here.",
+ scenes:[
+  {t:"Dust storm: pull aside, stay alive", dur:15,
+   say:["This is the most Arizona question on the test, and the steps are counterintuitive.",
+        "When a dust wall closes in, do not try to drive through it. Pull completely off the roadway.",
+        "Then turn off every light, including your hazards. Take your foot off the brake so no light shows at all.",
+        "Set the parking brake, stay buckled, and wait. Drivers in a whiteout follow any light they can see \u2014 a lit car on the shoulder pulls them straight into you."],
+   draw(g,p){g.clear();g.hroad(250,150);g.line(0,250,800,250,C.line,3,[20,16]);
+    const off=ease(seg(p,.25,.6)),dark=p>.7;
+    const cx=lerp(120,470,ease(seg(p,0,.6))),cy=lerp(292,392,off);
+    g.car(cx,cy,off?.12:0,C.blue,{lights:!dark&&p<.75,brake:p>.3&&p<.7});
+    const dust=ease(seg(p,.08,.55));
+    if(dust){g.ctx.save();g.ctx.globalAlpha=dust*.82;
+      const gd=g.ctx.createLinearGradient(lerp(900,120,dust),0,lerp(1200,520,dust),0);
+      gd.addColorStop(0,"rgba(196,164,104,0)");gd.addColorStop(.35,"rgba(184,150,92,.92)");
+      gd.addColorStop(1,"rgba(150,120,72,.98)");
+      g.ctx.fillStyle=gd;g.ctx.fillRect(0,0,LW,LH);g.ctx.restore();}
+    if(dark){g.ctx.save();g.ctx.globalAlpha=.55;g.box(0,0,LW,LH,"#0A0F0D");g.ctx.restore();}
+    const msg=p<.25?"Do not drive into it":p<.6?"Pull completely off the pavement"
+      :p<.78?"Lights OFF \u2014 including hazards":"Foot off the brake \u00b7 parking brake set \u00b7 stay buckled";
+    g.pill(400,44,msg,p<.6?C.warn:C.good);}},
+  {t:"Never cross a flooded wash", dur:12,
+   say:["Arizona washes fill in minutes during monsoon season, and moving water is far stronger than it looks.",
+        "A foot of water will float most cars. Two feet will carry away a pickup.",
+        "You cannot see whether the road under it has washed out entirely.",
+        "Turn around. And under Arizona's Stupid Motorist Law, driving around a barricade makes you personally liable for the cost of your rescue."],
+   draw(g,p){g.clear();g.hroad(260,150);
+    const w=ease(seg(p,.05,.4));
+    g.ctx.save();g.ctx.globalAlpha=.9;
+    g.box(300,186,lerp(0,260,w),150,"#2F5A6E");
+    for(let i=0;i<5;i++){const yy=200+i*30,ox=Math.sin(p*7+i)*14;
+      g.line(305+ox,yy,555+ox,yy,"rgba(150,205,225,.35)",2.5);}g.ctx.restore();
+    g.box(300,180,8,164,C.warn);g.box(548,180,8,164,C.warn);
+    for(let i=0;i<3;i++){g.box(268,196+i*22,64,14,i%2?C.warn:C.white,2);}
+    const cx=lerp(30,236,ease(seg(p,0,.45)));
+    const back=ease(seg(p,.62,1));
+    g.car(back?lerp(236,-40,back):cx,300,back?Math.PI:0,C.blue,{brake:p>.4});
+    g.pill(400,44,p<.5?"Water hides a road that may not be there":"Turn around \u2014 do not drown",
+      p<.5?C.warn:C.good);
+    const b=seg(p,.72,1);
+    if(b)g.txt("Stupid Motorist Law: you pay for your own rescue",400,410,
+      {s:16,a:"center",c:C.bad,w:700,alpha:b});}},
+  {t:"Skids and blowouts", dur:13,
+   say:["In a skid, ease off the accelerator and do not slam the brakes. Look where you want to go and steer there.",
+        "The car follows your eyes, so keep them on the escape path, not on the thing you are trying to miss.",
+        "In a blowout, hold the wheel firmly and ease off the gas. Braking hard can spin you.",
+        "Let the car slow on its own, then steer gently off the road. Hydroplaning is the same idea: ease off, hold steady, wait for grip."],
+   draw(g,p){g.clear();g.hroad(250,170);g.line(0,250,800,250,C.line,3,[20,16]);
+    const ph=p<.5?0:1;
+    if(!ph){const k=ease(seg(p,.1,.9)),ang=Math.sin(k*Math.PI*1.4)*.42;
+      const x=lerp(120,600,k),y=300-Math.sin(k*Math.PI)*46;
+      g.line(120,300,x,y,"rgba(255,255,255,.16)",8);
+      g.car(x,y,ang*.5,C.blue);
+      g.arrow(x+40,y-56,x+140,y-70,C.good,3.5);
+      g.txt("look and steer where you want to go",x+150,y-78,{s:13,c:C.good,w:700});
+      g.pill(400,44,"Skid: off the gas, no hard braking, steer to the escape path",C.warn);}
+    else{const k=ease(seg(p,.55,1));const x=lerp(140,560,k);
+      g.car(x,lerp(300,336,k),lerp(0,.1,k),C.blue,{brake:false});
+      g.dot(x-22,lerp(311,347,k),7,C.bad);
+      if(k>.15)g.txt("hold the wheel \u00b7 ease off the gas \u00b7 coast down",x,lerp(240,276,k)-46,
+        {s:14,a:"center",c:C.warn,w:700});
+      g.pill(400,44,"Blowout: do not brake hard \u2014 let it slow, then steer off",C.warn);}}}
+]},
+
+{id:"l-park", cat:"park", name:"Parking & Vehicle Basics",
+ blurb:"Curb distances, which way the wheels go on a hill, and ABS.",
+ scenes:[
+  {t:"How far from the curb", dur:12,
+   say:["Four parking distances show up again and again. Fifteen feet from a fire hydrant.",
+        "Twenty feet from a crosswalk at an intersection.",
+        "Thirty feet from a stop sign, a yield sign or a traffic signal.",
+        "And fifty feet from a railroad crossing."],
+   draw(g,p){g.clear();g.title("Parking clearances","Learn these four numbers");
+    const rows=[["15 ft","Fire hydrant"],["20 ft","Crosswalk at an intersection"],
+      ["30 ft","Stop sign, yield sign or signal"],["50 ft","Railroad crossing"]];
+    rows.forEach((r,i)=>{const a=seg(p,i*.16,i*.16+.34);if(!a)return;const y=150+i*70;
+      g.box(60,y-24,680,48,"#1E2724",9);
+      const wmax=[130,175,260,430][i];
+      g.box(60,y-24,lerp(0,wmax,ease(a)),48,"rgba(246,194,68,.16)",9);
+      g.txt(r[0],92,y,{s:20,w:800,c:C.warn,mono:true,alpha:a});
+      g.txt(r[1],206,y,{s:15.5,w:600,alpha:a});});}},
+  {t:"Parking on a hill", dur:13,
+   say:["Which way the front wheels point depends on the slope and on whether there is a curb.",
+        "Downhill with a curb, turn the wheels toward the curb. If the car rolls, the front tire wedges into it.",
+        "Uphill with a curb, turn the wheels away from the curb, so rolling back catches the tire on it.",
+        "With no curb at all, always turn the wheels toward the edge of the road, so a runaway car leaves the roadway instead of entering traffic."],
+   draw(g,p){g.clear();g.title("Hill parking","Where the wheels point");
+    const cases=[["Downhill, curb","toward the curb",1],["Uphill, curb","away from the curb",-1],
+      ["No curb","toward the edge",1]];
+    cases.forEach((c,i)=>{const a=seg(p,i*.24,i*.24+.44);if(!a)return;const x=140+i*260,y=232;
+      g.ctx.save();g.ctx.globalAlpha=a;
+      if(i<2){g.box(x-92,y+34,184,10,C.curb,3);g.txt("curb",x-92,y+62,{s:12,c:C.dim,w:600});}
+      else{g.box(x-92,y+34,184,10,"#3E3527",3);g.txt("shoulder",x-92,y+62,{s:12,c:C.dim,w:600});}
+      g.ctx.save();g.ctx.translate(x,y);g.ctx.scale(.94,.94);g.car(0,0,0,C.blue);
+      const st=c[2]*.5;
+      g.line(20,-13,20+Math.cos(st)*0,-13,C.warn,3);
+      g.ctx.save();g.ctx.translate(20,-11);g.ctx.rotate(st);g.box(-9,-4,18,8,C.warn,2);g.ctx.restore();
+      g.ctx.save();g.ctx.translate(20,11);g.ctx.rotate(st);g.box(-9,-4,18,8,C.warn,2);g.ctx.restore();
+      g.ctx.restore();
+      g.txt(c[0],x,y-64,{s:15,a:"center",w:800});
+      g.txt(c[1],x,y+92,{s:13.5,a:"center",c:C.warn,w:700});g.ctx.restore();});
+    const b=seg(p,.82,1);
+    if(b)g.txt("Set the parking brake every time",400,404,{s:15,a:"center",c:C.dim,w:600,alpha:b});}},
+  {t:"Braking and breakdowns", dur:12,
+   say:["With anti-lock brakes, an emergency stop means press the pedal down hard and hold it there.",
+        "The pedal will buzz and shudder under your foot. That is the system working. Do not pump it.",
+        "ABS keeps the wheels from locking so you can still steer around the hazard while braking.",
+        "If you break down, get as far off the road as you can, hazards on. In heavy traffic, staying belted inside is often safer than standing outside."],
+   draw(g,p){g.clear();g.hroad(250,160);g.line(0,250,800,250,C.line,3,[20,16]);
+    const ph=p<.55?0:1;
+    if(!ph){const k=ease(seg(p,.1,.95));const x=lerp(120,520,k);
+      g.line(120,300,x,300,"rgba(255,255,255,.14)",22);
+      g.car(x,300,0,C.blue,{brake:true});
+      const buzz=Math.sin(p*60)*3;
+      g.txt("press and HOLD",x,238+buzz,{s:17,a:"center",w:800,c:C.warn});
+      g.arrow(x+34,300,x+120,262,C.good,3.5);
+      g.txt("you can still steer",x+128,254,{s:13,c:C.good,w:700});
+      g.pill(400,44,"ABS: firm and constant \u2014 never pump the pedal",C.warn);}
+    else{const k=ease(seg(p,.6,1));
+      g.box(0,330,800,8,C.shoulder);
+      g.car(lerp(300,560,k),lerp(300,372,k),lerp(0,.14,k),C.blue,{brake:false});
+      const fl=(p*8%1)<.5;
+      if(k>.5){g.dot(lerp(300,560,k)-26,lerp(300,372,k)-14,5,fl?C.warn:"rgba(246,194,68,.2)");
+        g.dot(lerp(300,560,k)-26,lerp(300,372,k)+14,5,fl?C.warn:"rgba(246,194,68,.2)");}
+      g.pill(400,44,"Breakdown: as far off the road as possible, hazards on",C.good);}}}
+]}
+];
+
+/* ================= storage ================= */
+const KEY="az-permit-prep/v1";
+const blank={attempts:[],stats:{},instant:true,watched:{},voice:false};
+let S=blank;
+try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign({},blank,JSON.parse(raw));}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
+const stat=id=>S.stats[id]||{r:0,w:0};
+const missedIds=()=>Object.keys(S.stats).filter(id=>byId[id]&&S.stats[id].w>S.stats[id].r);
+
+function catAccuracy(cat){
+  let r=0,w=0;
+  inCat(cat).forEach(q=>{const s=stat(q.id); r+=s.r; w+=s.w;});
+  return {seen:r+w, pct: r+w ? Math.round(r/(r+w)*100) : null};
+}
+function overall(){
+  let r=0,w=0; Object.values(S.stats).forEach(s=>{r+=s.r;w+=s.w;});
+  return {r,w,pct: r+w ? Math.round(r/(r+w)*100) : null};
+}
+
+/* ================= utils ================= */
+const $ = s => document.querySelector(s);
+const esc = t => String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]];}return a;}
+function pick(arr,n){return shuffle(arr).slice(0,n);}
+const road = pct => `<div class="road" style="--pct:${pct}%"><div class="road-fill"></div><div class="road-dash"></div></div>`;
+
+/* build a shuffled instance of a question */
+function instance(q){
+  const order = shuffle(q.opts.map((t,i)=>({t,ok:i===q.c})));
+  return {id:q.id, cat:q.cat, sign:q.sign, q:q.q, why:q.why, opts:order,
+          c:order.findIndex(o=>o.ok)};
+}
+
+/* balanced draw across every topic, for the full exam */
+function examSet(n){
+  const keys=Object.keys(CATS), per=Math.floor(n/keys.length);
+  let out=[];
+  keys.forEach(k=>{out=out.concat(pick(inCat(k),per));});
+  const rest=ALL.filter(q=>!out.includes(q));
+  out=out.concat(pick(rest,n-out.length));
+  return shuffle(out).map(instance);
+}
+
+/* ================= app state ================= */
+let view="home", sess=null;
+
+const MODES={
+  exam:  {label:"Practice Exam",  build:()=>examSet(EXAM_N),                      instant:false},
+  quick: {label:"Quick Quiz",     build:()=>pick(ALL,10).map(instance),           instant:true},
+  signs: {label:"Road Signs Drill",build:()=>shuffle(SIGNS).map(s=>instance(byId["s_"+s.id])), instant:true},
+  missed:{label:"Missed Questions",build:()=>pick(missedIds().map(id=>byId[id]),20).map(instance), instant:true}
+};
+
+function start(mode,cat){
+  let qs, label;
+  if(mode==="topic"){ qs=pick(inCat(cat),Math.min(20,inCat(cat).length)).map(instance); label=CATS[cat].name; }
+  else { qs=MODES[mode].build(); label=MODES[mode].label; }
+  if(!qs.length) return;
+  sess={mode,cat,label,qs,i:0,picked:null,answers:[],
+        instant: mode==="exam" ? false : (mode==="topic"||mode==="quick"||mode==="signs"||mode==="missed") ? S.instant : true};
+  view="quiz"; render();
+}
+
+/* ================= views ================= */
+const NAV=[["home","Home"],["lessons","Lessons"],["signs","Sign Chart"],["cheat","Cheat Sheet"],["progress","Progress"]];
+function renderNav(){
+  $("#nav").innerHTML = NAV.map(([v,l])=>
+    `<button data-act="go" data-view="${v}"${view===v?' aria-current="page"':""}>${l}</button>`).join("");
+}
+
+function homeView(){
+  const o=overall(), att=S.attempts, best=att.length?Math.max(...att.map(a=>Math.round(a.correct/a.total*100))):null;
+  const passes=att.filter(a=>a.pass).length, miss=missedIds().length;
+  const started = o.r+o.w>0;
+  const watched = Object.keys(S.watched||{}).length;
+
+  const stats = `<div class="stats">
+    <div class="stat"><span class="stat-v">${att.length}</span><span class="stat-l">Tests taken</span></div>
+    <div class="stat"><span class="stat-v">${best===null?"\u2014":best+"%"}</span><span class="stat-l">Best score</span></div>
+    <div class="stat"><span class="stat-v">${o.pct===null?"\u2014":o.pct+"%"}</span><span class="stat-l">Overall accuracy</span></div>
+    <div class="stat"><span class="stat-v">${passes}</span><span class="stat-l">Passing runs</span></div>
+  </div>`;
+
+  const modes = `<div class="modes">
+    <button class="mode" data-act="start" data-mode="exam">
+      <div class="mode-top"><h3>Practice Exam</h3><span class="chip chip-go">Real format</span></div>
+      <p>30 questions drawn evenly from every topic, scored at the end. 24 correct to pass.</p>
+      <span class="mode-meta">30 Q \u00b7 80% to pass \u00b7 no hints</span></button>
+    <button class="mode" data-act="start" data-mode="quick">
+      <div class="mode-top"><h3>Quick Quiz</h3></div>
+      <p>Ten random questions with the answer explained right after you pick.</p>
+      <span class="mode-meta">10 Q \u00b7 instant feedback</span></button>
+    <button class="mode" data-act="start" data-mode="signs">
+      <div class="mode-top"><h3>Road Signs Drill</h3></div>
+      <p>All 27 signs, one at a time. Learn the shapes and colors \u2014 they carry meaning on their own.</p>
+      <span class="mode-meta">27 signs \u00b7 instant feedback</span></button>
+    <button class="mode" data-act="start" data-mode="missed"${miss?"":" disabled"}>
+      <div class="mode-top"><h3>Missed Questions</h3>${miss?`<span class="chip chip-stop">${miss}</span>`:""}</div>
+      <p>${miss?"Drill only the questions you get wrong more often than right.":"Nothing here yet \u2014 questions you miss will collect in this deck."}</p>
+      <span class="mode-meta">${miss?miss+" Q \u00b7 your weak spots":"empty"}</span></button>
+  </div>`;
+
+  const topics = `<div class="topics">${Object.entries(CATS).map(([k,c])=>{
+    const a=catAccuracy(k);
+    return `<button class="topic" data-act="start" data-mode="topic" data-cat="${k}">
+      <span class="topic-n">${c.name}<small>${c.blurb}</small></span>
+      <span class="meter"><i style="--pct:${a.pct||0}%"></i></span>
+      <span class="topic-p">${a.pct===null?"\u2014":a.pct+"%"}</span></button>`;}).join("")}</div>`;
+
+  return `<div class="fade">
+    <section class="hero">
+      <span class="eyebrow">Arizona MVD \u00b7 Class G written knowledge test</span>
+      <h1>Pass the permit test.<br><em>Twenty-four out of thirty.</em></h1>
+      <p class="hero-sub">Eight narrated lessons and ${ALL.length} questions, built from Arizona's own rules \u2014
+        dust storms, flooded washes, the 3-foot bicycle law, Class G restrictions \u2014 plus every road sign
+        you need to recognize on sight.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg" data-act="start" data-mode="exam">Start the 30-question exam</button>
+        <button class="btn btn-lg" data-act="go" data-view="lessons">Watch the lessons first</button>
+      </div>
+      <p class="hero-note"><label class="switch"><input type="checkbox" data-act="instant"${S.instant?" checked":""}>
+        Explain each answer as I go (practice modes)</label></p>
+    </section>
+    ${started?stats:""}
+    <div class="section-head" style="margin-top:6px"><h2>Learn it first</h2><span class="rule"></span>
+      <span class="eyebrow">${watched} of ${LESSONS.length} watched</span></div>
+    <p class="hero-sub" style="margin:-6px 0 16px;font-size:15px">Eight narrated animations covering everything
+      the test asks about. Watch a topic, then quiz yourself on it.</p>
+    ${lessonCards()}
+    <div class="section-head"><h2>Test yourself</h2><span class="rule"></span></div>
+    ${modes}
+    <div class="section-head"><h2>Drill one topic</h2><span class="rule"></span>
+      <span class="eyebrow">${started?"your accuracy":"not started"}</span></div>
+    ${topics}
+    ${disclaimer()}
+  </div>`;
+}
+
+function disclaimer(){
+  return `<p class="disclaimer"><b>Study aid, not the official test.</b> Questions here are written from Arizona
+  traffic law and MVD practice, but rules change. Confirm anything you are unsure about against the current
+  <b>Arizona Driver License Manual</b> from ADOT MVD before test day. Your progress is stored only in this browser.</p>`;
+}
+/* ---------------- quiz runner ---------------- */
+function quizView(){
+  const q=sess.qs[sess.i], n=sess.qs.length, answered=sess.picked!==null;
+  const right=sess.answers.filter(a=>a.ok).length, wrong=sess.answers.length-right;
+
+  const opts = q.opts.map((o,i)=>{
+    let cls="opt";
+    if(answered){
+      if(sess.instant){
+        if(i===q.c) cls+=" is-right";
+        else if(i===sess.picked) cls+=" is-wrong";
+        else cls+=" is-dim";
+      } else if(i===sess.picked) cls+=" is-picked";
+    }
+    return `<button class="${cls}" data-act="pick" data-i="${i}"${answered?" disabled":""}>
+      <span class="key">${"ABCD"[i]}</span><span>${esc(o.t)}</span></button>`;
+  }).join("");
+
+  const fb = (answered && sess.instant) ? (()=>{
+    const ok=sess.picked===q.c;
+    return `<div class="feedback${ok?"":" bad"}"><b>${ok?"Correct":"Not quite"}</b>
+      ${ok?"":`<p style="color:var(--ink)">The answer is <b style="color:var(--go)">${esc(q.opts[q.c].t)}</b>.</p>`}
+      <p>${esc(q.why)}</p></div>`;})() : "";
+
+  const last = sess.i===n-1;
+  return `<div class="runner fade">
+    <div class="runner-bar">
+      <span class="mile">${String(sess.i+1).padStart(2,"0")} / ${n}</span>
+      <span class="runner-title">${esc(sess.label)}</span>
+      <span class="runner-right">
+        ${sess.instant?`<span class="tally"><b>${right}</b> right \u00b7 <i>${wrong}</i> wrong</span>`:
+          `<span class="tally">${sess.answers.length} answered</span>`}
+        <button class="btn btn-sm" data-act="go" data-view="home">Exit</button>
+      </span>
+    </div>
+    ${road(Math.round(sess.i/n*100))}
+    <div class="qcard">
+      <span class="chip">${CATS[q.cat].name}</span>
+      ${q.sign?`<div class="qsign">${signArt(q.sign)}</div>`:""}
+      <h2 class="qtext">${esc(q.q)}</h2>
+      <div class="opts" role="group">${opts}</div>
+      <div aria-live="polite">${fb}</div>
+      <div class="runner-foot">
+        <button class="btn btn-primary" data-act="next"${answered?"":" disabled"}>
+          ${last?"See results":"Next question"}</button>
+        <span class="hint">Press 1\u20134 to answer${answered?" \u00b7 Enter to continue":""}</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+function pickAnswer(i){
+  if(sess.picked!==null) return;
+  const q=sess.qs[sess.i], ok=i===q.c;
+  sess.picked=i;
+  sess.answers.push({id:q.id, picked:i, ok, q});
+  const s=S.stats[q.id]||(S.stats[q.id]={r:0,w:0});
+  ok?s.r++:s.w++;
+  save(); render();
+}
+function nextQ(){
+  if(sess.picked===null) return;
+  if(sess.i===sess.qs.length-1){ finish(); }
+  else { sess.i++; sess.picked=null; render(); }
+}
+function finish(){
+  const correct=sess.answers.filter(a=>a.ok).length, total=sess.qs.length;
+  const pass=correct/total>=PASS;
+  S.attempts.unshift({t:Date.now(), mode:sess.label, correct, total, pass});
+  S.attempts=S.attempts.slice(0,25); save();
+  view="results"; render();
+}
+
+/* ---------------- results ---------------- */
+function resultsView(){
+  const a=sess.answers, correct=a.filter(x=>x.ok).length, total=sess.qs.length;
+  const pct=Math.round(correct/total*100), pass=correct/total>=PASS;
+  const need=Math.ceil(total*PASS);
+  const wrong=a.filter(x=>!x.ok);
+
+  const cats={};
+  a.forEach(x=>{const c=cats[x.q.cat]||(cats[x.q.cat]={r:0,n:0}); c.n++; if(x.ok)c.r++;});
+  const breakdown=Object.entries(cats).sort((p,q)=>p[1].r/p[1].n-q[1].r/q[1].n).map(([k,v])=>{
+    const p=Math.round(v.r/v.n*100);
+    return `<button class="topic" data-act="start" data-mode="topic" data-cat="${k}">
+      <span class="topic-n">${CATS[k].name}<small>${v.r} of ${v.n} correct \u2014 drill this topic</small></span>
+      <span class="meter"><i style="--pct:${p}%"></i></span>
+      <span class="topic-p">${p}%</span></button>`;}).join("");
+
+  const review = wrong.map(x=>`<div class="rev-item">
+      ${x.q.sign?`<div class="rev-sign">${signArt(x.q.sign)}</div>`:""}
+      <p class="rev-q">${esc(x.q.q)}</p>
+      <p class="rev-line">You chose <s>${esc(x.q.opts[x.picked].t)}</s></p>
+      <p class="rev-line">Correct answer: <b>${esc(x.q.opts[x.q.c].t)}</b></p>
+      <p class="rev-why">${esc(x.q.why)}</p></div>`).join("");
+
+  return `<div class="stack fade" style="gap:26px">
+    <div class="panel${pass?"":" fail"}">
+      <span class="eyebrow" style="color:rgba(255,255,255,.75)">${esc(sess.label)} \u00b7 result</span>
+      <span class="panel-verdict">${pass?"Passed":"Not yet"}</span>
+      <span class="panel-score">${correct} / ${total} &middot; ${pct}%</span>
+      <p class="panel-note">${pass
+        ? (pct===100?"A clean sweep. Run the exam a few more times so it holds under pressure."
+           :"Above the 80% line. Keep running exams until you clear it consistently.")
+        : `You need ${need} of ${total} to pass. Review the misses below, then drill your weakest topic.`}</p>
+    </div>
+
+    <div class="hero-cta">
+      <button class="btn btn-primary" data-act="start" data-mode="${sess.mode}"${sess.cat?` data-cat="${sess.cat}"`:""}>Take it again</button>
+      ${missedIds().length?`<button class="btn" data-act="start" data-mode="missed">Drill my missed questions</button>`:""}
+      <button class="btn" data-act="go" data-view="home">Back to home</button>
+    </div>
+
+    <section><div class="section-head"><h2>How each topic went</h2><span class="rule"></span>
+      <span class="eyebrow">weakest first</span></div>
+      <div class="topics">${breakdown}</div></section>
+
+    ${wrong.length?`<section><div class="section-head"><h2>What you missed</h2><span class="rule"></span>
+      <span class="eyebrow">${wrong.length} question${wrong.length>1?"s":""}</span></div>
+      <div class="rev">${review}</div></section>`:""}
+  </div>`;
+}
+/* ---------------- sign chart ---------------- */
+function signsView(){
+  return `<div class="fade">
+    <div class="section-head" style="margin-top:6px"><h2>Every sign you need to know</h2><span class="rule"></span>
+      <button class="btn btn-sm btn-primary" data-act="start" data-mode="signs">Drill these</button></div>
+    <p class="hero-sub" style="margin-bottom:18px;font-size:15.5px">Shape and color carry meaning before you
+      read a single word. Learn those first \u2014 on the test and on the road, they are often all you get.</p>
+    <div class="signgrid">${SIGNS.map(s=>`<div class="signcard">
+      <svg class="sgn" viewBox="0 0 100 100" role="img" aria-label="${s.name} sign">${s.art}</svg>
+      <h4>${s.name}</h4><span class="eyebrow" style="font-size:10.5px">${s.cls}</span>
+      <p>${s.mean}</p></div>`).join("")}</div>
+    ${disclaimer()}</div>`;
+}
+
+/* ---------------- cheat sheet ---------------- */
+const SHEET=[
+ ["The test itself",[["30","Questions on the Arizona written knowledge test"],["24","Correct answers needed to pass (80%)"],["15\u00bd","Minimum age in years for an instruction permit"],["21+","Age of the licensed driver who must sit beside you"]]],
+ ["Class G license (age 16)",[["6 mo","Minimum time you must hold the permit first"],["30 hrs","Supervised driving required, 10 of them at night"],["1","Maximum passengers under 18 for the first 6 months (family exempt)"],["12\u20135","No driving midnight to 5 a.m., with work/school/emergency exceptions"]]],
+ ["Speed limits",[["15","School zone when the crossing is in operation"],["25","Business or residential district, unposted"],["65","General highway maximum"],["75","Rural interstates where posted"]]],
+ ["Alcohol and drugs",[["0.08","BAC limit, driver 21 or older"],["0.00","Any alcohol is a violation under 21"],["0.04","Commercial driver limit"],["0.15","Extreme DUI threshold"],["12 mo","Suspension for a first refusal of a chemical test"],["8","Points in 12 months that trigger suspension or Traffic Survival School"]]],
+ ["Parking clearances",[["15 ft","From a fire hydrant"],["20 ft","From a crosswalk at an intersection"],["30 ft","From a stop sign, yield sign or signal"],["50 ft","From a railroad crossing"]]],
+ ["Distances and timing",[["2 sec","Minimum following distance in good conditions"],["3\u20134 sec","Following a motorcycle, or in poor conditions"],["100 ft","Signal before turning or changing lanes"],["500 ft","Dim high beams for oncoming traffic (200 ft when following)"],["500 ft","Headlights required when visibility drops below this"],["500 ft","Stay back this far from a responding emergency vehicle"],["3 ft","Minimum clearance when passing a bicycle"],["10 days","To report an address change to MVD"]]],
+ ["Insurance minimums",[["$25,000","Bodily injury, per person"],["$50,000","Bodily injury, per accident"],["$15,000","Property damage"]]],
+ ["Arizona weather rules",[["Dust storm","Pull fully off the road, lights OFF, foot off the brake, parking brake set, stay buckled"],["Flooded wash","Turn around. Driving past barricades makes you liable for rescue costs"],["Monsoon rain","Low beams, not high \u2014 and hydroplaning can start near 35 mph"]]]
+];
+function cheatView(){
+  return `<div class="fade">
+    <div class="section-head" style="margin-top:6px"><h2>The numbers worth memorizing</h2><span class="rule"></span>
+      <span class="eyebrow">last look before the test</span></div>
+    <div class="sheet">${SHEET.map(([h,rows])=>`<div class="sheet-card"><h3>${h}</h3><dl>${
+      rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl></div>`).join("")}</div>
+    ${disclaimer()}</div>`;
+}
+
+/* ---------------- progress ---------------- */
+function progressView(){
+  const o=overall(), att=S.attempts;
+  const hist = att.length ? `<div class="card tablewrap"><table class="hist"><thead><tr>
+      <th>When</th><th>Mode</th><th>Score</th><th>Result</th></tr></thead><tbody>${
+      att.map(a=>{const p=Math.round(a.correct/a.total*100);
+        return `<tr><td>${new Date(a.t).toLocaleDateString(undefined,{month:"short",day:"numeric"})}
+          ${new Date(a.t).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"})}</td>
+          <td>${esc(a.mode)}</td><td class="num">${a.correct}/${a.total} \u00b7 ${p}%</td>
+          <td><span class="chip ${a.pass?"chip-go":"chip-stop"}">${a.pass?"Pass":"Below 80%"}</span></td></tr>`;
+        }).join("")}</tbody></table></div>`
+    : `<div class="card empty">No tests yet. Take the practice exam and your history shows up here.</div>`;
+
+  const topics = `<div class="topics">${Object.entries(CATS).map(([k,c])=>{const a=catAccuracy(k);
+    return `<button class="topic" data-act="start" data-mode="topic" data-cat="${k}">
+      <span class="topic-n">${c.name}<small>${a.seen?a.seen+" answered":"not started"}</small></span>
+      <span class="meter"><i style="--pct:${a.pct||0}%"></i></span>
+      <span class="topic-p">${a.pct===null?"\u2014":a.pct+"%"}</span></button>`;}).join("")}</div>`;
+
+  return `<div class="fade">
+    <div class="section-head" style="margin-top:6px"><h2>Your progress</h2><span class="rule"></span>
+      <span class="eyebrow">${o.r+o.w} answers recorded</span></div>
+    <div class="stats">
+      <div class="stat"><span class="stat-v">${att.length}</span><span class="stat-l">Tests taken</span></div>
+      <div class="stat"><span class="stat-v">${att.length?Math.max(...att.map(a=>Math.round(a.correct/a.total*100)))+"%":"\u2014"}</span><span class="stat-l">Best score</span></div>
+      <div class="stat"><span class="stat-v">${o.pct===null?"\u2014":o.pct+"%"}</span><span class="stat-l">Overall accuracy</span></div>
+      <div class="stat"><span class="stat-v">${missedIds().length}</span><span class="stat-l">Shaky questions</span></div>
+    </div>
+    <div class="section-head"><h2>By topic</h2><span class="rule"></span></div>
+    ${topics}
+    <div class="section-head"><h2>Test history</h2><span class="rule"></span></div>
+    ${hist}
+    <div class="hero-cta" style="margin-top:22px">
+      <button class="btn btn-primary" data-act="start" data-mode="exam">Take a practice exam</button>
+      <button class="btn" data-act="reset">Reset all progress</button>
+    </div>
+    ${disclaimer()}</div>`;
+}
+
+/* ---------------- lesson player ---------------- */
+const RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+const PL={lesson:null,t:0,playing:false,rate:1,raf:null,last:0,g:null,cv:null,line:-1};
+const ICON={
+  play:'<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>',
+  pause:'<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>',
+  prev:'<svg viewBox="0 0 24 24"><path d="M6 6h2.5v12H6zm3.5 6l9.5-6v12z"/></svg>',
+  next:'<svg viewBox="0 0 24 24"><path d="M15.5 6H18v12h-2.5zM5 6l9.5 6L5 18z"/></svg>',
+  replay:'<svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg>'
+};
+const lTotal=L=>L.scenes.reduce((a,s)=>a+s.dur,0);
+function lAt(L,t){let acc=0;
+  for(let i=0;i<L.scenes.length;i++){const d=L.scenes[i].dur;
+    if(t<acc+d||i===L.scenes.length-1)return{i,p:clamp01((t-acc)/d),start:acc};
+    acc+=d;}
+  return{i:0,p:0,start:0};}
+const lStart=(L,i)=>L.scenes.slice(0,i).reduce((a,s)=>a+s.dur,0);
+const mmss=s=>{s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0");};
+function curLine(sc,p){const n=sc.say.length;return Math.min(n-1,Math.floor(p*n));}
+
+function speak(txt){
+  if(!S.voice||!window.speechSynthesis)return;
+  try{speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(txt);
+    u.rate=.98*PL.rate;u.pitch=1;u.lang="en-US";speechSynthesis.speak(u);}catch(e){}
+}
+const hush=()=>{try{window.speechSynthesis&&speechSynthesis.cancel();}catch(e){}};
+
+function plDraw(){
+  if(!PL.g||!PL.lesson)return;
+  const {i,p}=lAt(PL.lesson,PL.t);
+  PL.g.clear();
+  try{PL.lesson.scenes[i].draw(PL.g,RM&&!PL.playing?1:p);}catch(e){}
+}
+function plSync(){
+  const L=PL.lesson;if(!L)return;
+  const tot=lTotal(L),{i,p}=lAt(L,PL.t),sc=L.scenes[i];
+  const set=(id,fn)=>{const el=document.getElementById(id);if(el)fn(el);};
+  set("scrub",e=>{if(document.activeElement!==e)e.value=String(PL.t);});
+  set("ptime",e=>e.textContent=mmss(PL.t)+" / "+mmss(tot));
+  set("scenetag",e=>e.textContent=`Scene ${i+1} of ${L.scenes.length} \u2014 ${sc.t}`);
+  const li=curLine(sc,p);
+  set("cap",e=>{if(PL.line!==li||e.textContent!==sc.say[li]){e.textContent=sc.say[li];}});
+  if(PL.line!==li){if(PL.playing)speak(sc.say[li]);PL.line=li;}
+  document.querySelectorAll("[data-ch]").forEach(b=>
+    b.setAttribute("aria-current",String(+b.dataset.ch===i)));
+  set("stage",e=>e.classList.toggle("is-paused",!PL.playing));
+  set("bigplay",e=>e.innerHTML=PL.t>=tot?ICON.replay:ICON.play);
+  set("playbtn",e=>e.innerHTML=PL.playing?ICON.pause:(PL.t>=lTotal(L)?ICON.replay:ICON.play));
+}
+function plTick(ts){
+  if(!PL.playing){PL.raf=null;return;}
+  if(!PL.last)PL.last=ts;
+  const dt=Math.min(.12,(ts-PL.last)/1000)*PL.rate;PL.last=ts;
+  PL.t+=dt;
+  const tot=lTotal(PL.lesson);
+  if(PL.t>=tot){PL.t=tot;PL.playing=false;PL.raf=null;
+    S.watched[PL.lesson.id]=true;save();plDraw();plSync();return;}
+  plDraw();plSync();
+  PL.raf=requestAnimationFrame(plTick);
+}
+function plPlay(){
+  if(!PL.lesson)return;
+  if(PL.t>=lTotal(PL.lesson))PL.t=0;
+  PL.playing=true;PL.last=0;PL.line=-1;
+  if(!PL.raf)PL.raf=requestAnimationFrame(plTick);
+  plSync();
+}
+function plPause(){PL.playing=false;if(PL.raf){cancelAnimationFrame(PL.raf);PL.raf=null;}hush();plDraw();plSync();}
+function plToggle(){PL.playing?plPause():plPlay();}
+function plSeek(t){PL.t=Math.max(0,Math.min(lTotal(PL.lesson),t));PL.line=-1;hush();plDraw();plSync();}
+function plScene(i){const L=PL.lesson;i=Math.max(0,Math.min(L.scenes.length-1,i));plSeek(lStart(L,i));}
+function plStop(){PL.playing=false;if(PL.raf){cancelAnimationFrame(PL.raf);PL.raf=null;}hush();PL.lesson=null;}
+
+function plMount(){
+  const cv=document.getElementById("stage-canvas");if(!cv)return;
+  PL.cv=cv;PL.g=mkG(fitCanvas(cv));plDraw();plSync();
+  if(!RM)plPlay();
+}
+function mountThumbs(){
+  document.querySelectorAll("canvas[data-lesson]").forEach(cv=>{
+    const L=LESSONS.find(x=>x.id===cv.dataset.lesson);if(!L)return;
+    const g=mkG(fitCanvas(cv));g.clear();
+    try{L.scenes[0].draw(g,1);}catch(e){}});
+}
+addEventListener("resize",()=>{
+  if(view==="lesson"&&PL.cv){PL.g=mkG(fitCanvas(PL.cv));plDraw();}
+  else if(view==="lessons"||view==="home")mountThumbs();
+});
+
+/* ---------------- lesson views ---------------- */
+function lessonsView(){
+  const done=Object.keys(S.watched||{}).length;
+  return `<div class="fade">
+    <div class="section-head" style="margin-top:6px"><h2>Animated lessons</h2><span class="rule"></span>
+      <span class="eyebrow">${done} of ${LESSONS.length} watched</span></div>
+    <p class="hero-sub" style="margin-bottom:20px;font-size:15.5px">Every topic on the test, shown rather than
+      listed. Each lesson plays as a narrated animation you can pause, scrub and replay \u2014 turn on the voice-over
+      in the player if you would rather listen than read.</p>
+    ${lessonCards()}
+    ${disclaimer()}</div>`;
+}
+function lessonCards(){
+  return `<div class="lessongrid">${LESSONS.map(L=>`
+    <button class="lcard" data-act="lesson" data-id="${L.id}">
+      <span class="lcard-art"><canvas data-lesson="${L.id}"></canvas>
+        <span class="lcard-dur">${mmss(lTotal(L))}</span>
+        ${S.watched&&S.watched[L.id]?'<span class="lcard-seen">Watched</span>':""}</span>
+      <span class="lcard-b"><h3>${L.name}</h3><p>${L.blurb}</p>
+        <span class="mode-meta">${L.scenes.length} scenes \u00b7 ${mmss(lTotal(L))}</span></span>
+    </button>`).join("")}</div>`;
+}
+function lessonView(){
+  const L=PL.lesson,tot=lTotal(L),{i}=lAt(L,PL.t),sc=L.scenes[i];
+  const idx=LESSONS.indexOf(L),nxt=LESSONS[idx+1];
+  return `<div class="player fade">
+    <div class="runner-bar">
+      <span class="mile">${String(idx+1).padStart(2,"0")} / ${String(LESSONS.length).padStart(2,"0")}</span>
+      <span class="runner-title">${esc(L.name)}</span>
+      <span class="runner-right">
+        <label class="switch"><input type="checkbox" data-act="voice"${S.voice?" checked":""}> Voice-over</label>
+        <button class="btn btn-sm" data-act="go" data-view="lessons">All lessons</button>
+      </span>
+    </div>
+
+    <div class="stage${PL.playing?"":" is-paused"}" id="stage">
+      <canvas id="stage-canvas"></canvas>
+      <span class="scene-tag" id="scenetag">Scene ${i+1} of ${L.scenes.length} \u2014 ${esc(sc.t)}</span>
+      <span class="stage-veil"><button class="bigplay" id="bigplay" data-act="play"
+        aria-label="Play lesson">${ICON.play}</button></span>
+    </div>
+
+    <div class="controls">
+      <button class="ctrl" data-act="scene-prev" aria-label="Previous scene">${ICON.prev}</button>
+      <button class="ctrl ctrl-main" id="playbtn" data-act="play" aria-label="Play or pause">${ICON.play}</button>
+      <button class="ctrl" data-act="scene-next" aria-label="Next scene">${ICON.next}</button>
+      <input class="scrub" id="scrub" type="range" min="0" max="${tot}" step="0.1" value="${PL.t}"
+        data-act="scrub" aria-label="Scrub through the lesson">
+      <span class="time" id="ptime">${mmss(PL.t)} / ${mmss(tot)}</span>
+      <button class="rate" data-act="rate">${PL.rate}&times;</button>
+    </div>
+
+    <div class="caption"><span class="eyebrow">Narration</span>
+      <p id="cap" aria-live="polite">${esc(sc.say[curLine(sc,lAt(L,PL.t).p)])}</p></div>
+
+    <div class="chapters">${L.scenes.map((s,n)=>
+      `<button class="chapter" data-act="chapter" data-ch="${n}"
+        aria-current="${n===i}"><b>${n+1}</b>${esc(s.t)}</button>`).join("")}</div>
+
+    <div class="hero-cta" style="margin-top:8px">
+      <button class="btn btn-primary" data-act="start" data-mode="topic" data-cat="${L.cat}">
+        Quiz me on ${esc(L.name)}</button>
+      ${nxt?`<button class="btn" data-act="lesson" data-id="${nxt.id}">Next: ${esc(nxt.name)}</button>`:
+        `<button class="btn" data-act="start" data-mode="exam">Take the full practice exam</button>`}
+    </div>
+
+    <div class="section-head"><h2>Transcript</h2><span class="rule"></span>
+      <span class="eyebrow">everything said in this lesson</span></div>
+    <div class="transcript">${L.scenes.map((s,n)=>`<div class="tr-scene">
+      <h4>${n+1}. ${esc(s.t)}</h4><ol>${s.say.map(t=>`<li>${esc(t)}</li>`).join("")}</ol></div>`).join("")}</div>
+    ${disclaimer()}</div>`;
+}
+function openLesson(id){
+  const L=LESSONS.find(x=>x.id===id);if(!L)return;
+  plStop();PL.lesson=L;PL.t=0;PL.line=-1;PL.playing=false;
+  view="lesson";render();
+}
+
+/* ---------------- router ---------------- */
+function render(){
+  const app=$("#app");
+  app.innerHTML = view==="quiz" ? quizView()
+    : view==="results" ? resultsView()
+    : view==="lesson" ? lessonView()
+    : view==="lessons" ? lessonsView()
+    : view==="signs" ? signsView()
+    : view==="cheat" ? cheatView()
+    : view==="progress" ? progressView()
+    : homeView();
+  renderNav();
+  if(view==="lesson") plMount();
+  if(view==="lessons"||view==="home") mountThumbs();
+  if(view==="quiz"||view==="results"||view==="lesson") window.scrollTo({top:0,behavior:"instant"});
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-act]"); if(!t) return;
+  const act=t.dataset.act;
+  if(act==="go"){ sess=null; plStop(); view=t.dataset.view; render(); }
+  else if(act==="start"){ plStop(); start(t.dataset.mode,t.dataset.cat); }
+  else if(act==="pick"){ pickAnswer(+t.dataset.i); }
+  else if(act==="next"){ nextQ(); }
+  else if(act==="lesson"){ openLesson(t.dataset.id); }
+  else if(act==="play"){ plToggle(); }
+  else if(act==="scene-prev"){ plScene(lAt(PL.lesson,PL.t).i-1); }
+  else if(act==="scene-next"){ plScene(lAt(PL.lesson,PL.t).i+1); }
+  else if(act==="chapter"){ plScene(+t.dataset.ch); }
+  else if(act==="rate"){ PL.rate=PL.rate===1?1.5:PL.rate===1.5?.75:1; t.textContent=PL.rate+"\u00d7"; }
+  else if(act==="reset"){
+    if(confirm("Erase all scores, history, lesson progress and topic accuracy? This cannot be undone.")){
+      S=JSON.parse(JSON.stringify(blank)); save(); render();
+    }
+  }
+});
+document.addEventListener("change",e=>{
+  const a=e.target.dataset.act;
+  if(a==="instant"){ S.instant=e.target.checked; save(); }
+  else if(a==="voice"){ S.voice=e.target.checked; save(); if(!S.voice)hush(); }
+});
+document.addEventListener("input",e=>{
+  if(e.target.dataset.act==="scrub"){ plSeek(parseFloat(e.target.value)); }
+});
+document.addEventListener("keydown",e=>{
+  if(e.metaKey||e.ctrlKey||e.altKey) return;
+  if(view==="lesson"){
+    const tag=(e.target.tagName||"").toLowerCase();
+    if(tag==="input"||tag==="button") return;
+    if(e.key===" "||e.key==="k"){ e.preventDefault(); plToggle(); }
+    else if(e.key==="ArrowRight"){ e.preventDefault(); plSeek(PL.t+5); }
+    else if(e.key==="ArrowLeft"){ e.preventDefault(); plSeek(PL.t-5); }
+    else if(e.key==="Escape"){ plStop(); view="lessons"; render(); }
+    return;
+  }
+  if(view!=="quiz") return;
+  if(/^[1-4]$/.test(e.key)){ const i=+e.key-1; if(i<sess.qs[sess.i].opts.length){ e.preventDefault(); pickAnswer(i); } }
+  else if(e.key==="Enter"||e.key===" "){ if(sess.picked!==null){ e.preventDefault(); nextQ(); } }
+  else if(e.key==="Escape"){ sess=null; view="home"; render(); }
+});
+
+render();
+</script>
+</body>
+</html>
