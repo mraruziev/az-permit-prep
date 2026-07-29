@@ -10,10 +10,10 @@ and a cheat sheet. One HTML file, no build step, no dependencies, no tracking.
 
 ## Try it
 
-Open `index.html` in any browser. That is the whole install.
+**Live: https://mraruziev.github.io/az-permit-prep/**
 
-If GitHub Pages is enabled for this repo, it is also live at
-`https://<your-username>.github.io/az-permit-prep/`.
+Or clone the repo and open `index.html` in any browser. That is the whole install — it works
+offline, since nothing is fetched at runtime.
 
 ## What's in it
 
